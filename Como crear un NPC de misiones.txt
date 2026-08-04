@@ -1,0 +1,74 @@
+GUIA PARA CREAR UN NUEVO NPC DE MISIONES
+============================================
+
+El sistema de misiones se configura en el archivo:
+  Data\Custom\CustomQuestSystem.txt
+
+Cada NPC de misiones se define con los siguientes datos en la seccion 0:
+
+  QuestIndex  NpcClass  NpcMap  NpcX  NpcY  MinLevel  MaxLevel  MinReset  MaxReset  DailyLimit  "NombreDeLaMision"
+
+  - QuestIndex:  Numero unico que identifica la mision (ej: 0, 1, 2...)
+  - NpcClass:    Clase del NPC (su ID en MonsterList.txt)
+  - NpcMap:      Mapa donde aparece (0=Lorencia, 1=Dungeon, 2=Devias, 3=Noria...)
+  - NpcX, NpcY:  Coordenadas donde esta el NPC
+  - MinLevel:    Nivel minimo del jugador (-1 = sin requisito)
+  - MaxLevel:    Nivel maximo del jugador (-1 = sin requisito)
+  - MinReset:    Resets minimos (-1 = sin requisito)
+  - MaxReset:    Resets maximos (-1 = sin requisito)
+  - DailyLimit:  Limite de veces que se puede completar por dia (0 = infinito)
+  - "Nombre":    Nombre visible de la mision durante el progreso
+
+Ejemplo:
+  0  243  0  130  119  -1  -1  -1  -1  5  "Protegido de Lorencia"
+
+Esto crea la mision 0 en el NPC clase 243 (Eo), en Lorencia (mapa 0),
+coordenadas 130,119, sin requisitos de nivel/reset, maximo 5 veces por dia,
+con nombre "Protegido de Lorencia".
+
+
+SECCIONES DEL ARCHIVO
+======================
+
+Seccion 0 - Lista de misiones (obligatorio)
+  Define cada mision y a que NPC pertenece.
+
+Seccion 1 - Objetivos de asesinato (opcional)
+  Formato:  QuestIndex  MonsterIndex  Cantidad
+  Ejemplo:  0  2  15   (matar 15 Budge Dragons)
+  Los MonsterIndex se obtienen de Monster\MonsterList.txt
+
+Seccion 2 - Recompensas de items (opcional)
+  Formato:  QuestIndex  ItemIndex  ItemLevel  Skill  Luck  Option  Exc  Set  Cantidad
+  El ItemIndex se calcula con la formula: (Section * 32) + SubIndex
+  Ejemplo: Heart of Love = Section 14, SubIndex 11 = (14*32)+11 = 459
+  Los items se listan en Item\ItemLevel.txt con formato "Section,SubIndex".
+
+Seccion 3 - Recompensas de Zen (opcional)
+  Formato:  QuestIndex  CantidadDeZen
+  Ejemplo:  1  100000
+
+Seccion 4 - Dialogos del NPC (opcional)
+  Formato:  QuestIndex  "Texto del dialogo"
+  El QuestIndex 999 se usa para el mensaje de "mision completada, vuelve por tu premio".
+
+
+COMO PEDIR UN NUEVO NPC DE MISIONES
+======================================
+
+Para solicitar un nuevo NPC de misiones, debes indicarme:
+
+  1.  Que NPC quieres que de la mision (clase y nombre, ejemplo: "Eo clase 243")
+  2.  En que mapa y coordenadas debe estar
+  3.  El nombre de la mision (ej: "Caceria de Aranas")
+  4.  Que monstruos matar y cuantos (ej: "Spider x20")
+  5.  La recompensa (items y/o zen)
+  6.  Limite diario (0 = sin limite)
+
+Ejemplo de pedido:
+  "Quiero un NPC en Noria clase 240 (Sarah) en la posicion 150,100.
+   Que de una mision llamada 'Limpieza Forestal' para matar
+   Elite Bull Fighter x30 y recompense 1 Jewel of Bless.
+   Sin limite diario."
+
+Y yo me encargo de generarlo.

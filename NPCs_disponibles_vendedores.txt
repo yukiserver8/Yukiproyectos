@@ -1,0 +1,122 @@
+=============================================================================
+  NPCs DISPONIBLES COMO VENDEDORES — YukiMu Online 97K (SSeMU)
+=============================================================================
+  Fuente: MonsterList.txt + ShopManager.txt
+  Archivo shop: C:\ProyectoYukiMu\Program\MuServer97K\Data\ShopManager.txt
+  Tiendas:    C:\ProyectoYukiMu\Program\MuServer97K\Data\Shop\*.txt
+=============================================================================
+
+Los NPCs con Type=1 son personajes no-hostiles que pueden tener tienda.
+Índices disponibles: 230-255 (26 NPCs total)
+
+
+-----------------------------------------------------------------------------
+  NPCs CON TIENDA ASIGNADA (14)
+-----------------------------------------------------------------------------
+
+   Índice  NPC                     Mapa       Coordenadas  Archivo Tienda
+   ------  ----------------------  ---------  -----------  -----------------------------------------------
+   230     Wandering Merchant Alex  Lorencia   062, 130     "230 - Wandering Merchant Alex.txt"
+   231     Thompson Kenel           Devias     008, 077     "231 - Thompson Kenel.txt" (vacía)
+   231a    Thompson Kenel           Atlans     015, 015     "231a - Thompson Kenel Atlans.txt"
+   239     Arena Guard              Arena      072, 164     "239 - Arena Guard.txt"
+   242     Elf Lala                 Noria      173, 125     "242 - Elf Lala.txt"
+   243     Eo the Craftsman         Noria      195, 124     "243 - Eo the Craftsman.txt"
+   243a    Eo the Craftsman         Lost Tower 200, 077     "243a - Eo the Craftsman LostTower.txt"
+   244     Caren the Barmaid        Devias     226, 025     "244 - Caren the Barmaid.txt"
+   245     Wizard Izabel            Devias     225, 041     "245 - Wizard Izabel.txt"
+   245a    Wizard Izabel            Tarkan     198, 074     "245a - Wizard Izabel Tarkan.txt"
+   245b    Wizard Izabel            Lorencia   130, 127     "245b - Wizard Izabel Lorencia.txt"
+   246     Weapons Merchant Zienna  Devias     186, 047     "246 - Weapons Merchant Zienna.txt"
+   246a    Weapons Merchant Zienna  Lost Tower 203, 071     "246a - Weapons Merchant Zienna LostTower.txt"
+   248     Wandering Merchant Martin Lorencia  006, 145     "248 - Wandering Merchant Martin.txt"
+   250     Wandering Merchant       Lorencia   183, 137     "250 - Wandering Merchant.txt"
+   250a    Wandering Merchant       Lost Tower 213, 074     "250a - Wandering Merchant LostTower.txt"
+   251     Hanzo the Blacksmith     Lorencia   116, 141     "251 - Hanzo the Blacksmith.txt"
+   251a    Hanzo the Blacksmith     Lost Tower 202, 080     "251a - Hanzo the Blacksmith LostTower.txt"
+   253     Potion Girl Amy          Lorencia   127, 086     "253 - Potion Girl Amy.txt"
+   254     Pasi the Mage            Lorencia   118, 113     "254 - Pasi the Mage.txt"
+   254a    Pasi the Mage            Atlans     017, 022     "254a - Pasi the Mage Atlans.txt"
+   255     Lumen the Barmaid        Lorencia   123, 135     "255 - Lumen the Barmaid.txt"
+   255a    Lumen the Barmaid        Lost Tower 206, 071     "255a - Lumen the Barmaid LostTower Shop.txt"
+
+
+-----------------------------------------------------------------------------
+  NPCs SIN TIENDA ASIGNADA (disponibles para nuevas tiendas)
+-----------------------------------------------------------------------------
+
+  Índice  NPC                     Notas
+  ------  ----------------------  ------------------------------------------------
+  232     Archangel               NPC especial (eventos/quests)
+  233     Messenger of Archangel  NPC especial (quests)
+  234     Pet Trainer             NPC especial (mascotas)
+  235     Sebina the Priest       NPC especial
+  236     Golden Archer           NPC especial (evento Golden)
+  237     Charon                  NPC especial
+  238     Chaos Goblin            Usado para Chaos Machine
+  240     Safety Guardian         NPC especial
+  241     Royal Guard Captain L.  NPC especial
+  247     Guard                   Guardia (hostil si se ataca)
+  249     Guard                   Guardia (hostil si se ataca)
+
+
+-----------------------------------------------------------------------------
+  MAPAS DISPONIBLES
+-----------------------------------------------------------------------------
+
+  Código  Mapa          # NPCs tienda
+  ------  ------------  --------------------------
+  0       Lorencia      7 (Alex, Martin, Wandering,
+                          Hanzo, Amy, Pasi, Lumen)
+  1       Dungeon       0
+  2       Devias        3 (Thompson, Caren, Izabel, Zienna)
+  3       Noria         2 (Elf Lala, Eo)
+  4       Lost Tower    0
+  6       Arena         1 (Arena Guard)
+  7       Atlans        0
+  8       Tarkan        0
+  9-16    Event maps    0
+
+
+-----------------------------------------------------------------------------
+  FORMATO DEL ARCHIVO DE TIENDA (ShopManager.txt)
+-----------------------------------------------------------------------------
+
+  NPCIndex  MapNumber  LocationX  LocationY  Direction  AL0..AL3  GMLevel  "ShopPath"
+
+  Ejemplo:
+    230        0         062         130         3         1 1 1 1    *     "230 - Wandering Merchant Alex"
+
+  Columnas:
+    NPCIndex  = Índice del NPC en MonsterList.txt (230-255)
+    MapNumber = Código del mapa (0=Lorencia, 2=Devias, 3=Noria, etc.)
+    LocationX = Coordenada X en el mapa
+    LocationY = Coordenada Y en el mapa
+    Direction = Dirección que mira (0-7)
+    AL0..AL3  = Acceso por level/class (1=todos)
+    GMLevel   = Nivel de GM mínimo (*=todos)
+    ShopPath  = Nombre del archivo en Data\Shop\
+
+
+-----------------------------------------------------------------------------
+  FORMATO DEL ARCHIVO DE INVENTARIO (Data\Shop\*.txt)
+-----------------------------------------------------------------------------
+
+  ItemIndex  ItemLevel  Durability  SkillSwitch  LuckSwitch  AddOpt  ExeOpt  //Comentario
+
+  Ejemplo:
+    14,000     0           1          0            0          0        0      //Apple
+
+  Columnas:
+    ItemIndex   = "Sección,Índice" del Item.txt (ej. 14,000 = Apple)
+    ItemLevel   = Nivel/upgrade del item (0-13)
+    Durability  = Durabilidad (0=default, 255=infinito para ammo)
+    SkillSwitch = 0/1 - Habilidad activada
+    LuckSwitch  = 0/1 - Luck activado
+    AddOpt      = Opciones adicionales (0-7)
+    ExeOpt      = Opciones excelentes (bitmask 0-63)
+
+
+=============================================================================
+  FIN DEL DOCUMENTO
+=============================================================================

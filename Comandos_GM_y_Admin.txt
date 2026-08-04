@@ -1,0 +1,306 @@
+===============================================================================
+ COMANDOS DE GAME MASTER Y ADMIN - YukiMu 97K
+===============================================================================
+ Archivo de configuracion: Data\CommandManager.txt
+ Archivo de GMs:           Data\Util\GameMaster.txt
+
+ Todos los comandos se escriben en el chat del juego.
+===============================================================================
+
+INDICE:
+  1.  Comandos de Jugador (sin permisos especiales)
+  2.  Comandos de GM (requieren GMLevel 8+)
+  3.  Ejemplos practicos
+  4.  Como agregar un GM
+  5.  Notas importantes
+
+===============================================================================
+1. COMANDOS DE JUGADOR (sin GM)
+===============================================================================
+
+/move <mapa>                          - Teletransportarse a un mapa
+                                        Mapas: lorencia, devias, noria,
+                                        dungeon, losttower, atlans, tarkan,
+                                        icarus, arenA, devil_square
+
+/guildwar <nombre_guild>              - Retar a guerra de guild
+
+/guildsoccer <nombre_guild>           - Retar a partido de soccer
+
+/request [on|off|auto] [password]     - Modo de solicitud de party
+                                        Ej: /request auto 1234
+
+/post <mensaje>                       - Enviar mensaje global (chat world)
+
+/addstr <cantidad>                    - Agregar puntos a Fuerza
+/addagi <cantidad>                    - Agregar puntos a Agilidad
+/addvit <cantidad>                    - Agregar puntos a Vitalidad
+/addene <cantidad>                    - Agregar puntos a Energia
+/addcmd <cantidad>                    - Agregar puntos a Liderazgo
+  Uso avanzado: /addstr auto <N1> <N2> <N3> <N4>
+    Ej: /addstr auto 2 3 1 4  (reparto automatico)
+
+/pkclear                              - Limpiar estado PK
+
+/money <cantidad>                     - Retirar zen del banco
+
+/evo                                  - Completar evolucion de clase (quest)
+
+/ware <numero>                        - Abrir bodega extendida (1~N)
+                                        Ej: /ware 2
+
+/reset                                - Resetear personaje (vuelve a nivel 1)
+  Uso: /reset auto <N1> <N2> <N3> <N4> (reparto automatico)
+
+/mreset                               - Master reset (Grand Reset)
+
+/clearinv                             - Limpiar inventario
+
+/readd                                - Redistribuir todos los stats
+
+/rename <nombre_nuevo>                - Renombrar personaje
+
+/dcfriend <nombre> <password>         - Desconectar un amigo
+
+/attack                               - Configurar auto-ataque
+
+/offattack                            - Auto-ataque offline
+
+/pick                                 - Configurar auto-pick
+
+/pickset <item>                       - Agregar item al filtro de auto-pick
+
+/pickclear                            - Limpiar filtro de auto-pick
+
+===============================================================================
+2. COMANDOS DE GM (requieren GMLevel 8+)
+===============================================================================
+
+COMANDOS DE MOVIMIENTO Y LOCALIZACION:
+
+/track <nombre_jugador>               - Teletransportarse hacia un jugador
+                                        Ej: /track YukiGM
+
+/trace <nombre_jugador>               - Traer a un jugador hacia ti
+                                        Ej: /trace PlayerX
+
+/gmmove <nombre> <mapa> <X> <Y>       - Mover a un jugador a una posicion
+                                        Ej: /gmmove PlayerX 0 130 130
+
+/moveall <mapa> <X> <Y>               - Mover a TODOS los jugadores a una posicion
+                                        Ej: /moveall 3 180 100
+
+/moveguild <guild> <mapa> <X> <Y>     - Mover a toda una guild a una posicion
+                                        Ej: /moveguild MiGuild 2 150 150
+
+COMANDOS DE ITEMS:
+
+/make <section> <type> <lvl> <skill> <luck> <option> <exc> <set> [dur]
+                                      - Crear un item en el inventario
+                                        Parametros:
+                                          section = seccion (0~15)
+                                          type    = tipo dentro de la seccion
+                                          lvl     = nivel del item (0~15)
+                                          skill   = 0/1
+                                          luck    = 0/1 (suerte)
+                                          option  = 0/1 (vida)
+                                          exc     = 0~63 (excelente, bits)
+                                          set     = 0~15 (set ancient)
+                                          dur     = duracion(en segundos,opcional)
+                                        Ver ejemplos abajo.
+
+/make <cantidad> <section> <type> <lvl> <skill> <luck> <option> <exc> <set> [dur]
+                                      - Crear MULTIPLES items (cantidad negativa)
+                                        Ej: /make -10 0 3 7 1 1 1 15 0
+                                        (crea 10 espadas de nivel 7)
+
+/drop <section> <type> <lvl> <skill> <luck> <option> <exc> <set> [dur]
+                                      - Tirar item al piso (igual que /make)
+
+/makeset <type> <lvl> <luck> <option> <exc> <set> [dur]
+                                      - Crear un set completo en el inventario
+                                        (slots 7~11: arma, escudo, casco, armadura,
+                                         pantalones, guantes, botas)
+                                        Ej: /makeset 7 13 1 1 63 0
+                                        (set completo de Dark Knight nivel 13 +luck+option+exc)
+
+COMANDOS DE PERSONAJES:
+
+/skin <nombre> <skin_id>              - Cambiar la skin/apariencia de un jugador
+                                        Ej: /skin PlayerX 100
+
+/edit <nombre> <tipo> <valor>         - Editar stats de un jugador
+                                        Tipos:
+                                          1 = nivel
+                                          2 = LevelUpPoints
+                                          3 = Fuerza
+                                          4 = Agilidad
+                                          5 = Vitalidad
+                                          6 = Energia
+                                          7 = Liderazgo
+                                        Ej: /edit PlayerX 3 5000  (pone 5000 de fuerza)
+
+/setmoney <nombre> <cantidad>         - Poner dinero a un jugador
+                                        Ej: /setmoney PlayerX 100000000
+
+/setpk <nombre> <nivel>               - Cambiar nivel PK (0~6)
+                                        Ej: /setpk PlayerX 0
+
+/setvip <nombre> <nivel> <dias>       - Asignar VIP a un jugador
+                                        niveles: 0=nada, 1=VIP1, 2=VIP2, 3=VIP3
+                                        Ej: /setvip PlayerX 3 30
+
+/setbuff <nombre> <tipo> <efecto>     - Agregar/quitar/limpiar buffs
+  /setbuff <nombre> add <effect_id>   - Agregar buff
+  /setbuff <nombre> remove <effect_id> - Quitar buff
+  /setbuff <nombre> clear             - Limpiar todos los buffs
+
+COMANDOS DE MONSTRUOS:
+
+/makemob <monster_id> <cantidad>      - Spawnear monstruos en tu posicion
+                                        Maximo 50 por vez.
+                                        Ej: /makemob 43 1 (spawnea 1 Golden Budge Dragon)
+
+COMANDOS DE EVENTOS:
+
+/bcstart                              - Forzar inicio de Blood Castle
+
+/dsstart                              - Forzar inicio de Devil Square
+
+/ccstart                              - Forzar inicio de Chaos Castle
+
+COMANDOS DE COMUNICACION:
+
+/gmpost <mensaje>                     - Enviar mensaje global como GM
+
+/firework <mapa> <X> <Y>              - Crear efecto de fuegos artificiales
+
+COMANDOS DE BANEO:
+
+/disconnect <nombre>                  - Desconectar a un jugador
+
+/banacc <nombre>                      - Banear cuenta de un jugador
+/banchar <nombre>                     - Banear personaje de un jugador
+/banchat <nombre> <minutos>           - Silenciar a un jugador (mute)
+                                        Ej: /banchat PlayerX 60
+
+/unbanacc <nombre>                    - Desbanear cuenta
+/unbanchar <nombre>                   - Desbanear personaje
+/unbanchat <nombre>                   - Quitar silencio
+
+===============================================================================
+3. EJEMPLOS PRACTICOS
+===============================================================================
+
+CREAR ITEMS CON /make:
+
+  Seccion 0 = Espadas (Swords)
+  Seccion 1 = Maces / Scepters
+  Seccion 2 = Spears / Scythes
+  Seccion 3 = Bows / Crossbows
+  Seccion 4 = Staves / Sticks
+  Seccion 5 = Shields
+  Seccion 6 = Helmets
+  Seccion 7 = Armors
+  Seccion 8 = Pants
+  Seccion 9 = Gloves
+  Seccion 10 = Boots
+  Seccion 11 = Rings / Pendants
+  Seccion 12 = Wings
+  Seccion 13 = Pets / Dinorant
+  Seccion 14 = Potions / Jewels
+  Seccion 15 = Scrolls / Magic books
+
+Ejemplos concretos:
+
+  /make 6 7 13 1 1 1 63 0
+    -> Set completo de DK nivel 13 (Helmet, Armor, Pants, Gloves, Boots)
+       Cada slot (6,7,8,9,10) con skill=1, luck=1, option=1, excelente=63
+
+  /make 0 3 7 1 1 1 63 0
+    -> Espada (Seccion 0, Type 3 = Blade) nivel 7, skill, luck, option, excelente
+
+  /make -10 14 3 0 0 0 0 0 0
+    -> 10 Jewels of Bless (Seccion 14, Type 3 = Jewel of Bless)
+       NOTA: cantidad negativa = multi. SIEMPRE en la primera posicion.
+
+  /make 14 13 0 0 0 0 0 0
+    -> Jewel of Life (Seccion 14, Type 13)
+
+  /make 14 14 0 0 0 0 0 0
+    -> Jewel of Soul (Seccion 14, Type 14)
+
+  /make 14 16 0 0 0 0 0 0
+    -> Jewel of Chaos (Seccion 14, Type 16)
+
+  /make 13 0 0 0 0 0 0 0
+    -> Dinorant (Seccion 13, Type 0)
+
+  /make 12 3 0 1 1 1 63 0
+    -> Ala (Seccion 12, Type 3 = Cape of Lord, Level 0, Skill, Luck, Option, Exc)
+
+  /make 12 0 0 1 0 0 4 0
+    -> Ala de Fuego (Seccion 12, Type 0 = Wings of Elf) con opcion exc=4
+
+SPAWNEAR MOBS CON /makemob:
+
+  /makemob 43 1       -> 1 Golden Budge Dragon (facil)
+  /makemob 79 1       -> 1 Golden Derkon (boss, nivel 80)
+  /makemob 82 1       -> 1 Golden Tantalos (boss final, nivel 90)
+  /makemob 42 1       -> 1 Dragon Rojo
+  /makemob 2 10       -> 10 Budge Dragons
+  /makemob 53 3       -> 3 Golden Titans
+  /makemob 7 5        -> 5 Elite Skeletons
+
+  NOTA: Maximo 50 mobs por comando.
+
+MAS EJEMPLOS:
+
+  /track PlayerX                  -> Ir hacia PlayerX
+  /trace PlayerX                  -> Traer a PlayerX hacia ti
+  /gmmove PlayerX 3 180 100      -> Mover a PlayerX a Noria (mapa 3)
+  /moveall 0 130 130             -> Mover todos a Lorencia centro
+  /moveguild Legendarios 2 0 0   -> Mover guild Legendarios a Devias
+  /setmoney PlayerX 999999999    -> Dar dinero maximo
+  /edit PlayerX 1 400            -> Poner nivel 400 a PlayerX
+  /edit PlayerX 2 10000          -> Poner 10000 puntos libres a PlayerX
+  /banchat PlayerX 30            -> Silenciar a PlayerX por 30 minutos
+  /disconnect PlayerX            -> Desconectar a PlayerX
+  /gmpost Bienvenidos al server! -> Anuncio global
+
+===============================================================================
+4. COMO AGREGAR UN GM
+===============================================================================
+
+Abrir el archivo:
+  Data\Util\GameMaster.txt
+
+Formato:
+  "Cuenta"  "Personaje"  GMLevel
+
+Ejemplo:
+  "admin"   "YukiGM"      32
+  "admin"   "admin"       32
+
+Donde GMLevel puede ser 0~32. Con GMLevel 8 puedes usar todos los comandos
+de GM. Con GMLevel 32 tienes el maximo permiso.
+
+Despues de editar, REINICIAR el GameServer para que tome efecto.
+
+===============================================================================
+5. NOTAS IMPORTANTES
+===============================================================================
+
+- El archivo Data\CommandManager.txt controla que comandos estan activos,
+  sus delays, costos de zen, niveles minimos y maximos, y GMLevel requerido.
+- Todos los comandos de GM estan configurados con GMLevel=8 en este server.
+- Si un comando no funciona, revisar:
+  1. Que el personaje este en Data\Util\GameMaster.txt
+  2. Que el GameServer se haya reiniciado tras editar GameMaster.txt
+  3. Que el comando este activo en CommandManager.txt (Switch)
+- Los comandos se escriben en el chat del juego (tecla Enter).
+- Los comandos NO distinguen entre mayusculas/minusculas.
+
+===============================================================================
+ Documento generado el 26/07/2026
+===============================================================================

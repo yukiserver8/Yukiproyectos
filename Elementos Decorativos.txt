@@ -1,0 +1,165 @@
+===============================================================================
+        ELEMENTOS DECORATIVOS SPAWNEABLES - YUKI MU (SSeMU 97K)
+===============================================================================
+
+Cualquier NPC (Type 1) puede colocarse como decoracion estatica en cualquier
+mapa. No atacan, no se mueven, solo permanecen en su posicion.
+
+Todos los monstruos y NPCs se definen en:
+  Data\Monster\MonsterList.txt
+
+Y se spawnean (colocan en el mapa) en los archivos:
+  Data\Monster\Spawn\[Mapa] - [Nombre].txt
+
+
+===============================================================================
+1. NPCs DECORATIVOS (Type 1) - RECOMENDADOS
+===============================================================================
+
+Estos son los NPCs que NO atacan, NO se mueven, y son ideales para decoracion.
+Todos tienen Type=1 en MonsterList.txt.
+
+Indice  Nombre                         Apariencia
+------  -----------------------------  --------------------------
+ 230    Wandering Merchant Alex        Mercader (humano)
+ 231    Thompson Kenel                 Mercader (humano)
+ 232    Archangel                      Angel (ala blanca)
+ 233    Messenger of Archangel         Mensajero (ala blanca)
+ 234    Pet Trainer                    Entrenador de mascotas
+ 235    Sebina the Priest              Sacerdotisa
+ 236    Golden Archer                  Arquero dorado
+ 237    Charon                         Barquero (esqueleto)
+ 238    Chaos Goblin                   Goblin de Chaos
+ 239    Arena Guard                    Guardia de Arena
+ 240    Safety Guardian                Guardian de seguridad
+ 241    Royal Guard Captain Lorence    Capitan de la guardia
+ 242    Elf Lala                       Elfa
+ 243    Eo the Craftsman               Artesano
+ 244    Caren the Barmaid              Cantinera
+ 245    Wizard Izabel                  Mago (hombre)
+ 246    Weapons Merchant Zienna        Mercader de armas (mujer)
+ 247    Guard                          Guardia
+ 248    Wandering Merchant Martin      Mercader (humano)
+ 249    Guard                          Guardia
+ 250    Wandering Merchant             Mercader
+ 251    Hanzo the Blacksmith           Herrero
+ 253    Potion Girl Amy                Chica de pociones
+ 254    Pasi the Mage                  Mago (hombre)
+ 255    Lumen the Barmaid              Cantinera
+
+
+===============================================================================
+2. MONSTRUOS DECORATIVOS / DE AMBIENTE (Type 0)
+===============================================================================
+
+Estos monstruos tienen la ventaja de tener modelos animales o efectos
+visuales. Algunos atacan, otros no.
+
+ATENCION: Los que tienen AttackType > 0 atacaran a los jugadores.
+Los que tienen MoveRange = 0 no se mueven de su sitio.
+
+Indice  Nombre              Attack  Se Mueve  Apariencia
+------  -----------------   ------  --------  --------------------------
+   0    Bull Fighter        SI      SI        Toro rojo (agresivo)
+   4    Elite Bull Fighter  SI      SI        Toro elite (agresivo)
+   8    Poison Bull Fighter SI      SI        Toro veneno (agresivo)
+  41    Death Cow           SI      SI        Vaca de la muerte (KKK)
+ 100    Lance               NO*     NO        Efecto Lanza (Blood Castle)
+ 101    Iron Stick          NO*     NO        Palo de hierro (Blood Castle)
+ 102    Fire                NO*     NO        Llama decorativa
+ 103    Meteorite           NO*     NO        Llama decorativa
+ 131    Castle Gate         NO      NO        Puerta de Blood Castle
+ 132    Statue of Saint     NO      NO        Estatua (BC)
+ 133    Statue of Saint     NO      NO        Estatua (BC)
+ 134    Statue of Saint     NO      NO        Estatua (BC)
+ 200    Soccer Ball         NO*     NO        Balon de futbol
+
+* NOTA: Lance, Iron Stick, Fire, Meteorite y Soccer Ball tienen DamageMin/Max
+  definido (100-200) pero AttackType = 0 (no atacan activamente). Hacen dano
+  si el jugador colisiona con ellos (como trampa ambiental).
+
+
+===============================================================================
+3. EJEMPLOS DE USO
+===============================================================================
+
+Para colocar un elemento decorativo, se edita el archivo MonsterSetBase
+correspondiente al mapa. Hay DOS formatos:
+
+FORMATO 1 - Spawn punto fijo (Seccion 0):
+  // MonsterIndex   SpawnRadius   LocationX   LocationY   Direction
+      253             0             130         130         3
+
+  Esto coloca a Potion Girl Amy en Lorencia X=130 Y=130 mirando al Sur.
+
+FORMATO 2 - Spawn en area (Seccion 1):
+  // MonsterIndex   SpawnRadius   RangeStartX   RangeStartY   RangeEndX   RangeEndY   Direction   MaxSpawnCount
+      240             3             100           100           200         200         3           5
+
+  Esto coloca 5 Safety Guardian dispersos en el area X100-200, Y100-200.
+
+Archivos de mapa por nombre:
+
+  000 - Lorencia.txt
+  001 - Dungeon.txt
+  002 - Devias.txt
+  003 - Noria.txt
+  004 - Lost Tower.txt
+  005 - Exile.txt
+  006 - Arena.txt
+  007 - Atlans.txt
+  008 - Tarkan.txt
+  009 - Devil Square.txt
+  010 - Icarus.txt
+  011 - Blood Castle 1.txt
+  012 - Blood Castle 2.txt
+  013 - Blood Castle 3.txt
+  014 - Blood Castle 4.txt
+  015 - Blood Castle 5.txt
+  016 - Blood Castle 6.txt
+  017 - Chaos Castle.txt
+  ...etc
+
+Ruta completa:
+  C:\ProyectoYukiMu\Program\MuServer97K\Data\Monster\Spawn\
+
+
+===============================================================================
+4. RECOMENDACIONES
+===============================================================================
+
+- Para decoracion puramente estetica (no interactiva): usar NPCs (Type 1).
+  No atacan, no se mueven, y tienen modelos variados.
+
+- Para animales: "Bull Fighter" (0), "Death Cow" (41) son los unicos con
+  apariencia de animal/vaca, pero ATACAN al jugador. Solo usarlos si se
+  acepta que sean agresivos.
+
+- Para efectos visuales: Fire (102) y Meteorite (103) dan efecto de llama.
+
+- Para estructuras: Castle Gate (131) y Statue of Saint (132-134) sirven
+  como decoracion de castillo/estatua.
+
+- La "vaca" que ves al lado de Amy en Lorencia NO es un NPC spawneable
+  por el servidor -- es parte del mapa renderizado por el cliente (archivo
+  .att del juego). No se puede mover ni duplicar desde el server.
+
+
+===============================================================================
+5. MAPA DE COORDENADAS POR MAPA
+===============================================================================
+
+Mapa        Tamano aprox.         Notas
+----------  --------------------  --------------------------
+Lorencia    0-255 (x) / 0-255    Ciudad principal
+Noria       0-255 (x) / 0-255    Ciudad de elfos
+Devias      0-255 (x) / 0-255    Ciudad de hielo
+Atlans      0-255 (x) / 0-255    Oceano
+Tarkan      0-255 (x) / 0-255    Desierto
+Lost Tower  0-255 (x) / 0-255    Torre
+Arena       0-255 (x) / 0-255    Battleground
+
+Para encontrar coordenadas exactas, se puede usar el comando /where
+dentro del juego (si esta habilitado).
+
+===============================================================================

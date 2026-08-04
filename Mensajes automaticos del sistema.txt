@@ -1,0 +1,73 @@
+MENSAJES AUTOMATICOS DEL SISTEMA
+======================================
+
+Hay DOS sistemas de mensajes:
+
+
+1. ANUNCIOS AUTOMATICOS (BOTTOM)
+--------------------------------
+
+Archivo:  Data\Util\Notice.txt
+
+Estos son los mensajes que aparecen solos cada cierto tiempo
+(como el que dice "MuSentinela old 97k").
+
+Formato del archivo:
+
+  "Texto del mensaje"  Tipo  IntervaloSegundos
+  end
+
+  - Tipo:  0 = normal (azul, centro superior)
+  - IntervaloSegundos: cada cuantos segundos se repite
+
+Ejemplo:
+  "Bienvenido a nuestro servidor!"  0  120
+  "Evento de exp doble activado!"   0  300
+
+Para agregar uno nuevo: escribe una linea nueva antes del "end".
+Para modificar uno: cambia el texto o el intervalo.
+Para eliminar uno: borra la linea completa.
+
+NO necesitas recompilar, solo reiniciar el servidor.
+MAXIMO 100 anuncios.
+
+
+2. TEXTO DE EVENTOS Y SISTEMAS (Message.txt)
+---------------------------------------------
+
+Archivo:  Data\Message.txt
+
+Este archivo contiene TODOS los textos que usa el servidor:
+eventos, comandos, errores, mensajes del sistema, etc.
+
+Formato:
+
+  NumeroIndice  "Texto del mensaje (con %d, %s si se necesita)"
+
+Ejemplos reales:
+  154     "Welcome back %s!"
+  300     "You have to wait %d seconds to use %s"
+  500     "You cannot move at this time"
+  727     "Blood Castle will close in %d minute(s)"
+
+Para MODIFICAR un mensaje existente:
+  - Busca el numero de indice en el archivo
+  - Cambia solo el texto entre comillas (NO el indice)
+  - NO necesita recompilar, solo reiniciar servidor
+
+Para AGREGAR un mensaje NUEVO:
+  - Busca un numero de indice que no este usado
+    (los indices usados van del 0 al 733 aproximadamente,
+     hay muchos huecos disponibles)
+  - Agrega la linea antes del "end"
+  - El mensaje se podra usar desde el codigo con:
+    gMessage.GetMessage(tuNumeroIndice)
+
+Para usar el mensaje desde el CODIGO (solo programacion):
+  gNotice.GCNoticeSend(jugadorIndex, 1, 0, 0, 0, 0, 0,
+    gMessage.GetMessage(300), segundos, "nombrecomando");
+
+  gNotice.GCNoticeSendToAll(0, 0, 0, 0, 0, 0,
+    gMessage.GetMessage(727), minutosRestantes);
+
+  %s = string, %d = numero entero

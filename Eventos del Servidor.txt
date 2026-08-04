@@ -1,0 +1,269 @@
+===============================================================================
+                    EVENTOS DEL SERVIDOR YUKI MU (SSeMU 97K)
+===============================================================================
+
+ÍNDICE:
+  1. Blood Castle (Castillo de Sangre)
+  2. Devil Square (Plaza del Diablo)
+  3. Invasion Manager (Invasiones Programadas)
+     - Skeleton King Invasion
+     - Red Dragon Invasion
+     - Golden Invasion
+  4. Golden Archer (Arquero Dorado)
+  5. Bonus Manager (Happy Hour / Doble Experiencia)
+  6. Drop Event
+  7. Custom Arena
+
+===============================================================================
+1. BLOOD CASTLE (Castillo de Sangre)
+===============================================================================
+
+Estado: ACTIVADO
+Duración: 15 minutos por evento
+Jugadores máximos: 10 por sala
+Límite de entradas: Sin límite
+
+Horarios (cada 2 horas, todos los días):
+  00:00 / 02:00 / 04:00 / 06:00 / 08:00 / 10:00
+  12:00 / 14:00 / 16:00 / 18:00 / 20:00 / 22:00
+
+Niveles de entrada (Common / Special):
+  Blood Castle 1:  Lv 15-80   (Special: 10-60)
+  Blood Castle 2:  Lv 81-130  (Special: 61-110)
+  Blood Castle 3:  Lv 131-180 (Special: 111-160)
+  Blood Castle 4:  Lv 181-230 (Special: 161-210)
+  Blood Castle 5:  Lv 231-280 (Special: 211-260)
+  Blood Castle 6:  Lv 281+     (Special: 261+)
+
+Experiencia por completar (1er puesto / 2do puesto):
+  BC1: 20,000 / 5,000
+  BC2: 50,000 / 10,000
+  BC3: 80,000 / 15,000
+  BC4: 90,000 / 20,000
+  BC5: 100,000 / 25,000
+  BC6: 110,000 / 30,000
+
+Recompensas en Zen:
+  BC1: 20,000 / 10,000
+  BC2: 50,000 / 25,000
+  BC3: 100,000 / 50,000
+  BC4: 150,000 / 80,000
+  BC5: 200,000 / 100,000
+  BC6: 250,000 / 120,000
+
+Drops exclusivos de Blood Castle 6:
+  - Jewel of Bless
+  - Jewel of Soul
+  - Jewel of Life
+  - Jewel of Creation
+
+NPC necesario: Archangel (se accede con el item "Invisibility Cloak" +1 a +6).
+
+Entradas disponibles en tienda de Wizard Izabel (Lorencia 130/127):
+  - Invisibility Cloak +1 a +6
+  - Devil Invitation +1 a +6
+
+Tasa de éxito al crear tickets en Chaos Machine: 80%
+
+
+===============================================================================
+2. DEVIL SQUARE (Plaza del Diablo)
+===============================================================================
+
+Estado: ACTIVADO
+Duración: 20 minutos por evento
+Jugadores máximos: 15 por sala
+Límite de entradas: Sin límite
+
+Horarios (cada 4 horas, todos los días):
+  00:30 / 04:30 / 08:30 / 12:30 / 16:30 / 20:30
+
+Niveles de entrada (Common / Special):
+  Devil Square 1:  Lv 10-99    (Special: 6-66)
+  Devil Square 2:  Lv 100-179  (Special: 67-118)
+  Devil Square 3:  Lv 180-249  (Special: 119-166)
+  Devil Square 4:  Lv 250+     (Special: 167+)
+
+Experiencia (según puesto, del 1ro al 10mo):
+  DS1: 6,000 / 4,000 / 4,000 / 2,000 / 2,000 / 2,000 / 1,000 / 1,000 / 1,000 / 1,000
+  DS2: 8,000 / 6,000 / 6,000 / 4,000 / 4,000 / 4,000 / 2,000 / 2,000 / 2,000 / 2,000
+  DS3: 10,000 / 8,000 / 8,000 / 6,000 / 6,000 / 6,000 / 4,000 / 4,000 / 4,000 / 4,000
+  DS4: 20,000 / 10,000 / 10,000 / 8,000 / 8,000 / 8,000 / 6,000 / 6,000 / 6,000 / 6,000
+
+Recompensas en Zen:
+  DS1: 30,000 / 25,000 / 25,000 / 20,000 / 20,000 / 20,000 / 15,000 / 15,000 / 15,000 / 15,000
+  DS2: 40,000 / 35,000 / 35,000 / 30,000 / 30,000 / 30,000 / 25,000 / 25,000 / 25,000 / 25,000
+  DS3: 50,000 / 45,000 / 45,000 / 40,000 / 40,000 / 40,000 / 35,000 / 35,000 / 35,000 / 35,000
+  DS4: 60,000 / 55,000 / 55,000 / 50,000 / 50,000 / 50,000 / 45,000 / 45,000 / 45,000 / 45,000
+
+Drops exclusivos de Devil Square 4:
+  - Jewel of Bless
+  - Jewel of Soul
+  - Jewel of Life
+  - Jewel of Creation
+
+NPC necesario: Devil Square Gate. Entrada mediante "Devil's Invitation" +1 a +6.
+
+Tasa de éxito al crear tickets en Chaos Machine: 80%
+
+
+===============================================================================
+3. INVASION MANAGER (Invasiones Programadas)
+===============================================================================
+
+Estado: ACTIVADO
+Duración: 10 minutos cada invasión
+
+Las invasiones ocurren CADA 4 HORAS, escalonadas cada 10 minutos,
+todos los días del mes.
+
+--------------------------------------------------------------------------------
+3A. SKELETON KING INVASION
+--------------------------------------------------------------------------------
+
+Horarios: 00:05 / 04:05 / 08:05 / 12:05 / 16:05 / 20:05
+
+Jefe: Death King (Monster 55)
+Acompañantes: Death Bone (Monster 56) x10
+
+Ubicaciones:
+  - Lorencia: Death King x1 + Death Bone x10 (Zona 125,190 - 140,203)
+  - Noria:    Death King x1 + Death Bone x10 (Zona 195,70 - 205,86)
+
+Drops del Skeleton King (Death King):
+  - Kris (+5), Rapier (+5), Sword of Assassin (+5), Katana (+5)
+  - Hand Axe (+5), Double Axe (+5), Mace (+5), Morning Star (+5)
+  - Dragon Lance (+5), Crossbow (+5), Bow (+5), Golden Crossbow (+5)
+  - Skull Staff (+5)
+  - Buckler (+5), Horn Shield (+5), Kite Shield (+5)
+  - Leather Set (+5), Pad Set (+5), Vine Set (+5)
+  - Guardian Angel, Imp, Horn of Uniria
+  - Ring of Ice (+8), Ring of Poison (+8)
+  - Pendant of Lighting (+8), Pendant of Fire (+8)
+  - Jewel of Bless, Jewel of Soul, Jewel of Chaos
+
+--------------------------------------------------------------------------------
+3B. RED DRAGON INVASION
+--------------------------------------------------------------------------------
+
+Horarios: 00:15 / 04:15 / 08:15 / 12:15 / 16:15 / 20:15
+
+Monstruo: Red Dragon (Monster 42)
+Cantidad: 1 en Lorencia, 1 en Devias, 1 en Noria
+
+Drops del Red Dragon:
+  - Jewel of Soul (100% de probabilidad)
+
+--------------------------------------------------------------------------------
+3C. GOLDEN INVASION (Invasion Dorada)
+--------------------------------------------------------------------------------
+
+Horarios: 00:25 / 04:25 / 08:25 / 12:25 / 16:25 / 20:25
+
+Esta invasion despliega multiples monstruos dorados por todos los mapas:
+
+  Lorencia:
+    - Golden Budge Dragon x5
+    - Golden Dragon x1
+
+  Devias:
+    - Golden Titan x5
+    - Golden Soldier x5
+    - Golden Dragon x1
+
+  Noria:
+    - Golden Goblin x5
+    - Golden Dragon x1
+
+  Atlans:
+    - Golden Lizard King x3
+    - Golden Vepar x5
+
+  Tarkan:
+    - Golden Tantalos x3
+    - Golden Iron Wheel x5
+
+Drops de monstruos dorados (todos dan Box of Luck):
+  - Golden Budge Dragon: Box of Luck (nivel 0 - basica)
+  - Golden Titan:        Box of Luck (nivel 9)
+  - Golden Soldier:      Box of Luck (nivel 8)
+  - Golden Goblin:       Box of Luck (nivel 8)
+  - Golden Dragon:       Box of Luck (nivel 10 - la mejor)
+  - Golden Lizard King:  Box of Luck (nivel 11)
+  - Golden Vepar:        Box of Luck (nivel 9)
+  - Golden Tantalos:     Box of Luck (nivel 12 - la mejor)
+  - Golden Iron Wheel:   Box of Luck (nivel 10)
+
+
+===============================================================================
+4. GOLDEN ARCHER (Arquero Dorado)
+===============================================================================
+
+Estado: PERMANENTE (NPC disponible siempre)
+
+NPC permanente en el servidor que intercambia medallas por recompensas.
+
+Recompensas segun nivel de grupo:
+  Grupo 0: 10% Jewel of Chaos, 1% Bless, 1% Soul, 1% Life
+  Grupo 1: 10% Jewel of Chaos, 3% Bless, 3% Soul, 3% Life
+  Grupo 2: 10% Jewel of Chaos, 5% Bless, 5% Soul, 5% Life
+  Grupo 3: 10% Jewel of Chaos, 7% Bless, 7% Soul, 7% Life
+  Grupo 4: 10% Jewel of Chaos, 10% Bless, 10% Soul, 10% Life
+
+
+===============================================================================
+5. BONUS MANAGER (Happy Hour / Doble Experiencia)
+===============================================================================
+
+Estado: ACTIVADO (pero sin horarios configurados actualmente)
+
+El sistema soporta los siguientes tipos de bonus:
+  - Experience Bonus (porcentaje de exp adicional)
+  - Item Drop Bonus (porcentaje de drop adicional)
+  - Excellent Item Drop Rate Bonus
+  - Set Item Drop Rate Bonus
+  - Chaos Mix Bonus
+
+Actualmente no hay horarios de Happy Hour activos.
+Se pueden configurar en Data\Event\BonusManager.dat.
+
+
+===============================================================================
+6. DROP EVENT
+===============================================================================
+
+Estado: ACTIVADO (pero sin eventos configurados actualmente)
+
+Sistema para programar drops especiales de items en momentos especificos.
+Actualmente sin configuracion activa.
+Se puede configurar en Data\Event\DropEvent.dat.
+
+
+===============================================================================
+7. CUSTOM ARENA
+===============================================================================
+
+Estado: DESACTIVADO
+
+Si se activa, se ejecutaria todos los dias a las 20:00.
+Duracion: 10 minutos, maximo 100 jugadores, minimo 1.
+Permite todas las clases.
+Puerta de inicio: 450 / Puerta de salida: 22.
+
+
+===============================================================================
+CONFIGURACION GENERAL DE EVENTOS
+===============================================================================
+
+Tasa de experiencia bonus para eventos: 5500% (55x)
+PK permitido para entrada a eventos: Si
+MaxLevelUpEvent: Activado
+
+Todas las configuraciones se encuentran en:
+  - GameServer\DATA\GameServerInfo - Event.dat
+  - Data\Event\*.dat
+  - Data\EventItemBag\*
+
+Para activar/desactivar eventos, modificar GameServerInfo - Event.dat
+y reiniciar el GameServer.
+===============================================================================

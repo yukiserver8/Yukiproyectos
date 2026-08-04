@@ -1,0 +1,27 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// -----------------------------------------------------------------------------------------------
+// [00,000]    [0~11]      [0~255]      [0-1]         [0-1]        [0~7]       [0~63]
+// ItemIndex   ItemLevel   Durability   SkillSwitch   LuckSwitch   Aditional   Excellent   Comment
+// -----------------------------------------------------------------------------------------------
+    07,013      7           0            0             1            4           0           //Spirit Helm+7+luck+opt
+    08,013      7           0            0             1            4           0           //Spirit Armor+7+luck+opt
+    09,013      7           0            0             1            4           0           //Spirit Pants+7+luck+opt
+    10,013      7           0            0             1            4           0           //Spirit Gloves+7+luck+opt
+    11,013      7           0            0             1            4           0           //Spirit Boots+7+luck+opt
+    07,022      3           0            0             1            4           0           //Dark Side Helm+3+luck+opt
+    08,022      3           0            0             1            4           0           //Dark Side Armor+3+luck+opt
+    09,022      3           0            0             1            4           0           //Dark Side Pants+3+luck+opt
+    10,022      3           0            0             1            4           0           //Dark Side Gloves+3+luck+opt
+    11,022      3           0            0             1            4           0           //Dark Side Boots+3+luck+opt
+    04,012      7           0            1             1            4           0           //Serpent Crossbow+7+luck+skill+opt
+    06,010      7           0            0             1            4           0           //Big Round Shield+7+luck+opt
+end

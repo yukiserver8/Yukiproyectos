@@ -1,0 +1,59 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// -----------------------------------------------------------------------------------------------
+// [00,000]    [0~11]      [0~255]      [0-1]         [0-1]        [0~7]       [0~63]
+// ItemIndex   ItemLevel   Durability   SkillSwitch   LuckSwitch   Aditional   Excellent   Comment
+// -----------------------------------------------------------------------------------------------
+   14,009      0           1            0             0            0           0           //Ale
+   14,010      0           1            0             0            0           0           //Town Portal Scroll
+   13,016      1           0            0             0            0           0           //Scroll of Archangel
+   13,016      2           0            0             0            0           0           //Scroll of Archangel
+   13,016      3           0            0             0            0           0           //Scroll of Archangel
+   13,016      4           0            0             0            0           0           //Scroll of Archangel
+   13,016      5           0            0             0            0           0           //Scroll of Archangel
+   13,016      6           0            0             0            0           0           //Scroll of Archangel
+   13,016      7           0            0             0            0           0           //Scroll of Archangel
+   13,017      1           0            0             0            0           0           //Blood Bone
+   13,017      2           0            0             0            0           0           //Blood Bone
+   13,017      3           0            0             0            0           0           //Blood Bone
+   13,017      4           0            0             0            0           0           //Blood Bone
+   13,017      5           0            0             0            0           0           //Blood Bone
+   13,017      6           0            0             0            0           0           //Blood Bone
+   13,017      7           0            0             0            0           0           //Blood Bone
+   14,017      1           0            0             0            0           0           //Devil's Eye
+   14,017      2           0            0             0            0           0           //Devil's Eye
+   14,017      3           0            0             0            0           0           //Devil's Eye
+   14,017      4           0            0             0            0           0           //Devil's Eye
+   14,018      1           0            0             0            0           0           //Devil's Key
+   14,018      2           0            0             0            0           0           //Devil's Key
+   14,018      3           0            0             0            0           0           //Devil's Key
+   14,018      4           0            0             0            0           0           //Devil's Key
+   13,029      0           1            0             0            0           0           //Armor of Guardsman
+    04,007      5           255          0             0            0           0           //Bolt+5
+    04,015      5           255          0             0            0           0           //Arrow+5
+    14,003      3           51           0             0            0           0           //Large Healing Potion
+    14,006      3           51           0             0            0           0           //Large Mana Potion
+    13,000      10          250          0             0            0           0           //Guardian Angel+10
+    13,001      10          250          0             0            0           0           //Imp+10
+    13,010      0           0            0             0            0           0           //Transformation Ring (Bull Fighter)
+    13,010      1           0            0             0            0           0           //Transformation Ring (Giant)
+    13,010      2           0            0             0            0           0           //Transformation Ring (Skeleton Warrior)
+    13,010      3           0            0             0            0           0           //Transformation Ring (Poison Bull Fighter)
+    13,010      4           0            0             0            0           0           //Transformation Ring (Thunder Lich)
+    13,010      5           0            0             0            0           0           //Transformation Ring (Death Cow)
+    13,010      6           0            0             0            0           0           //Transformation Ring (Budge Dragon)
+    12,008      0           1            0             0            0           0           //Healing Orb
+    12,009      0           1            0             0            0           0           //Orb of Greater Fortitude
+    12,010      0           1            0             0            0           0           //Orb of Greater Damage
+    12,011      0           1            0             0            0           0           //Orb of Summoning
+    12,007      0           1            0             0            0           0           //Orb of Twisting Slash
+    12,013      0           1            0             0            0           0           //Orb of Impale
+end

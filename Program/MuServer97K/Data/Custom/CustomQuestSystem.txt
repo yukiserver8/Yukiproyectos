@@ -1,0 +1,15 @@
+// QuestIndex  NpcClass  NpcMap  NpcX  NpcY  MinLevel  MaxLevel  MinReset  MaxReset  RepeatType
+0
+	0           243       0       130   119   *         *         *         *         0
+end
+
+// QuestIndex  MonsterIndex  KillCount
+1
+	0           3             15
+	0           2             10
+end
+
+// QuestIndex  ItemIndex  ItemLevel  Skill  Luck  Option  Exc  Set  Quantity
+2
+	0           459        3          0      0     0       0    0    1
+end

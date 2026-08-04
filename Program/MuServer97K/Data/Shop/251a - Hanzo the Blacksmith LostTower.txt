@@ -1,0 +1,23 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// -----------------------------------------------------------------------------------------------
+// [00,000]    [0~11]      [0~255]      [0-1]         [0-1]        [0~7]       [0~63]
+// ItemIndex   ItemLevel   Durability   SkillSwitch   LuckSwitch   Aditional   Excellent   Comment
+// -----------------------------------------------------------------------------------------------
+    00,016      6           0            1             1            4           0           //Sword of Destruction+6+luck+skill+opt
+    00,018      6           0            1             1            4           0           //Thunder Sword+6+luck+skill+opt
+    01,007      6           0            1             1            4           0           //Larkan Axe+6+luck+skill+opt
+    02,007      6           0            1             1            4           0           //Elemental Mace+6+luck+skill+opt
+    03,008      6           0            1             1            4           0           //Great Scythe+6+luck+skill+opt
+    04,016      6           0            1             1            4           0           //Saint Crossbow+6+luck+skill+opt
+    05,007      6           0            1             1            4           0           //Chaos Staff+6+luck+skill+opt
+    06,011      6           0            0             1            4           0           //Serpent Shield+6+luck+opt
+end

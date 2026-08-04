@@ -1,0 +1,27 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// -----------------------------------------------------------------------------------------------
+// [00,000]    [0~11]      [0~255]      [0-1]         [0-1]        [0~7]       [0~63]
+// ItemIndex   ItemLevel   Durability   SkillSwitch   LuckSwitch   Aditional   Excellent   Comment
+// -----------------------------------------------------------------------------------------------
+13,000      10          250          0             0            0           0           //Guardian Angel+10
+    13,001      10          250          0             0            0           0           //Satan/Imp+10
+     13,008      3           0            0             1            1           0           //Ring of Ice+3+luck+option
+     13,009      3           0            0             1            1           0           //Ring of Poison+3+luck+option
+     13,012      3           0            0             1            1           0           //Pendant of Lightning+3+luck+option
+     13,013      3           0            0             1            1           0           //Pendant of Fire+3+luck+option
+    13,010      0           0            0             0            0           0           //Transformation Ring (Bull Fighter)
+    13,010      1           0            0             0            0           0           //Transformation Ring (Giant)
+    13,010      2           0            0             0            0           0           //Transformation Ring (Skeleton Warrior)
+    13,010      3           0            0             0            0           0           //Transformation Ring (Poison Bull Fighter)
+    13,010      4           0            0             0            0           0           //Transformation Ring (Thunder Lich)
+    13,010      5           0            0             0            0           0           //Transformation Ring (Death Cow)
+end

@@ -1,0 +1,46 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// ------------------------------------------------------------------------------------
+// Message                                                            Type   RepeatTime
+// ------------------------------------------------------------------------------------
+   "Bienvenido a Mu Yuki."                                              0      240
+   "Bienvenido a Mu Yuki. Que la bendicion de la Diosa Yuki te acompane en tu aventura."  0      240
+   "El Reset esta disponible al alcanzar el nivel 400."                 0      240
+   "Antes de realizar un Reset debes retirar todo tu equipamiento."     0      240
+   "Cada Reset fortalece tu camino. Sigue creciendo junto a la Diosa Yuki!"  0      240
+   "Forma un Guild y conquista el continente junto a tus aliados."      0      240
+   "Blood Castle y Devil Square ofrecen grandes recompensas."  0      240
+   "Permanece atento a las invasiones. Los jefes pueden aparecer en cualquier momento."  0      240
+   "Las fuerzas de Kundun nunca descansan. Preparate para el combate."  0      240
+   "Recuerda utilizar el baul para guardar tus objetos mas valiosos."   0      240
+   "Si necesitas ayuda, contacta a un Game Master. Nunca compartas tu contrasenia."  0      240
+   "Explora todos los mapas y descubre los secretos que guarda Mu Yuki."  0      240
+   "Participa en los eventos automaticos para conseguir excelentes recompensas."  0      240
+   "Respeta a los demas aventureros y ayuda a construir una gran comunidad."  0      240
+   "Invita a tus amigos y forjen juntos una nueva leyenda en Mu Yuki."  0      240
+   "Gracias por formar parte de Mu Yuki. Que la Diosa Yuki ilumine tu camino!"  0      240
+   "Chaos Machine es el unico lugar donde podras crear alas y objetos especiales."  0      240
+   "No subestimes a los Golden Monsters. Sus tesoros son muy codiciados."  0      240
+   "Noria es un excelente lugar para comenzar la aventura de los Elfos."  0      240
+   "Devias guarda grandes secretos, pero tambien peligros para los aventureros descuidados."  0      240
+   "Atlans esconde criaturas marinas capaces de derrotar incluso a heroes experimentados."  0      240
+   "Lost Tower conduce hacia las fuerzas oscuras de Kundun. Entra preparado."  0      240
+   "Dungeon es ideal para entrenar durante tus primeros niveles."  0      240
+   "Busca Party con otros aventureros para progresar mas rapido."  0      240
+   "Las Jewels of Bless y Soul son esenciales para fortalecer tu equipamiento."  0      240
+   "La Diosa Yuki protege a quienes ayudan a otros aventureros durante su viaje."  0      240
+   "Antes de desafiar Blood Castle, revisa tu equipo y prepara suficientes pociones."  0      240
+   "Devil Square recompensa a quienes sobreviven hasta el final del evento."  0      240
+   "Habla con los NPC de cada ciudad. Muchos tienen servicios utiles para tu aventura."  0      240
+   "El continente esta lleno de secretos. Explora cada mapa y descubre nuevas aventuras."  0      240
+   "Kundun observa cada batalla. La Diosa Yuki confia en que podras detenerlo."  0      240
+   "PUEDEN UTILIZAR EL COMANDO /POST PARA OFRECER SUS PRODUCTOS!."  0      240
+end

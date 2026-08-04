@@ -1,0 +1,12 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # Thompson Kenel Lost Tower test shop
+// #############################################################################
+
+// ItemIndex   ItemLevel   Durability   SkillSwitch   LuckSwitch   Aditional   Excellent
+    02,004      7           255          0             1            1           0           //Bone Helm+7+luck+option
+    03,004      7           255          0             1            1           0           //Bone Armor+7+luck+option
+    04,004      7           255          0             1            1           0           //Bone Pants+7+luck+option
+    05,004      7           255          0             1            1           0           //Bone Gloves+7+luck+option
+    06,004      7           255          0             1            1           0           //Bone Boots+7+luck+option
+end

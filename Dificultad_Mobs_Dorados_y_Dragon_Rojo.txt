@@ -1,0 +1,109 @@
+===============================================================================
+ DIFICULTAD, VIDA, DEFENSA Y DAÑO DE MOBS DORADOS Y DRAGON ROJO
+===============================================================================
+ Basado en: Program\MuServer97K\Data\Monster\MonsterList.txt
+===============================================================================
+
+1. MOBS DORADOS (Golden Monsters)
+===============================================================================
+
+| #  | Nombre               | Nvl | Vida   | Daño Min | Daño Max | Defensa | Def Mág | Tasa Ataq | Tasa Def | Respawn (seg) |
+|----|----------------------|-----|--------|----------|----------|---------|---------|-----------|----------|---------------|
+| 43 | Golden Budge Dragon  |  15 |   2,200|      120 |      125 |      45 |       0 |        75 |       30 |           600 |
+| 53 | Golden Titan         |  53 |   8,000|      170 |      180 |     105 |       0 |       265 |       77 |            20 |
+| 54 | Golden Soldier       |  46 |   3,500|      140 |      150 |      75 |       0 |       230 |       64 |            20 |
+| 78 | Golden Goblin        |  20 |   3,100|      125 |      130 |      50 |       0 |       100 |       30 |           600 |
+| 79 | Golden Derkon        |  80 |  23,000|      300 |      350 |     230 |       0 |       400 |       90 |             5 |
+| 80 | Golden Lizard King   |  83 |  25,000|      310 |      360 |     240 |       0 |       415 |      150 |            15 |
+| 81 | Golden Vepar         |  61 |   6,300|      190 |      200 |     110 |       0 |       310 |       90 |             8 |
+| 82 | Golden Tantalos      |  90 |  30,000|      450 |      560 |     300 |       0 |       450 |      185 |            70 |
+| 83 | Golden Wheel         |  77 |  15,000|      320 |      360 |     230 |       0 |       385 |      160 |            70 |
+
+Detalles adicionales:
+- Golden Titan usa ataque especial (AttackType 150).
+- Golden Soldier usa ataque a distancia (AttackType 5).
+- Golden Vepar usa ataque de hielo (AttackType 17).
+- Golden Derkon, Golden Tantalos y Golden Titan usan ataque especial (AttackType 150).
+- Todos los Mobs Dorados usan atributo 2 (posible elemento tierra/oscuro).
+- Velocidad de movimiento: Generalmente 400. Velocidad de ataque: 1400 a 2000.
+- Resistencias: Los mas fuertes (Derkon, Lizard King, Tantalos, Wheel) tienen
+  resistencia 9 a fuego, hielo, veneno y rayo. Los debiles tienen resistencia 2.
+
+Lo que dejan caer (drop):
+- Golden Budge Dragon -> Caja de la Suerte (Box of Luck)
+- Golden Goblin      -> Caja de la Suerte Nvl 8
+- Golden Soldier     -> Caja de la Suerte Nvl 8
+- Golden Titan       -> Caja de la Suerte Nvl 9
+- Golden Vepar       -> Caja de la Suerte Nvl 9
+- Golden Dragon (Derkon) -> Caja de la Suerte Nvl 10
+- Golden Iron Wheel  -> Caja de la Suerte Nvl 10
+- Golden Lizard King -> Caja de la Suerte Nvl 11
+- Golden Tantalos    -> Caja de la Suerte Nvl 12
+
+Evento Invasion de Dragones Dorados:
+- Spawnea multiples mobs dorados en Lorencia, Devias, Noria, Atlans y Tarkan.
+- Duracion del evento: 600 segundos (10 minutos).
+- Incluye 3 Golden Derkon como bosses (1 en cada mapa: Lorencia, Devias, Noria).
+- Los Derkon tienen respawn de solo 5 segundos.
+- Boss Derby (Golden Derkon) es el mas peligroso junto con Golden Tantalos.
+
+===============================================================================
+
+2. DRAGON ROJO (Red Dragon)
+===============================================================================
+
+Estadisticas:
+- Nivel: 47
+- Vida: 5,000 HP
+- Daño Minimo: 300
+- Daño Maximo: 350
+- Defensa: 230
+- Defensa Magica: 0
+- Tasa de Ataque: 200
+- Tasa de Defensa: 80
+- Velocidad de Movimiento: 800 (lento)
+- Velocidad de Ataque: 2000
+- Rango de Ataque: 5
+- Tipo de Ataque: 150 (ataque especial)
+- Tiempo de Respawn: 28,800 segundos (8 HORAS - no respawnea rapido)
+- Drop: Jewel of Soul (100% de probabilidad)
+
+Resistencias elementales:
+- Fuego:    100 (inmune)
+- Hielo:    254 (casi completamente inmune)
+- Veneno:   100 (inmune)
+- Rayo:     100 (inmune)
+
+Evento Invasion de Dragon Rojo:
+- Spawnea 1 Dragon Rojo en Lorencia, 1 en Devias, 1 en Noria.
+- Duracion del evento: 600 segundos (10 minutos).
+- El dragon es lento (MoveSpeed 800) pero pega duro.
+- Practicamente inmune a todos los elementos.
+- No respawnea hasta pasadas 8 horas (28800 segundos).
+
+===============================================================================
+
+3. COMPARATIVA RAPIDA
+===============================================================================
+
+Mas debiles (para niveles bajos):
+  Golden Budge Dragon (Nvl 15, 2200 HP, 45 def)
+  Golden Goblin (Nvl 20, 3100 HP, 50 def)
+
+Medios:
+  Golden Soldier (Nvl 46, 3500 HP, 75 def)
+  Golden Titan (Nvl 53, 8000 HP, 105 def)
+  Golden Vepar (Nvl 61, 6300 HP, 110 def)
+
+Dificiles:
+  Golden Wheel (Nvl 77, 15000 HP, 230 def)
+  Golden Derkon (Nvl 80, 23000 HP, 230 def)
+  Golden Lizard King (Nvl 83, 25000 HP, 240 def)
+
+Jefes finales:
+  Golden Tantalos (Nvl 90, 30000 HP, 300 def, 450-560 daño)
+  Dragon Rojo (Nvl 47, 5000 HP, 230 def, 300-350 daño, casi inmune a elementos)
+
+===============================================================================
+ Documento generado el 26/07/2026
+===============================================================================

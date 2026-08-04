@@ -1,0 +1,16 @@
+Presione una tecla para continuar . . . 
+=================================================
+===    SSeMU Emulator Powered by SetecSoft    ===
+===          https://www.ssemu.com.ar         ===
+=================================================
+
+[Custom Effect] Loaded: 0
+[Custom Fog] Loaded: 0
+[Custom Item] Loaded: 59
+[Custom Map] Loaded: 16
+[Custom Monster] Loaded: 0
+[Custom ToolTip] Loaded: 0
+[Skill Attack Speed] Loaded: 0
+
+[.\Path\ServerInfo.sse] Generated successfully...
+

@@ -1,0 +1,322 @@
+╔══════════════════════════════════════════════════════════════╗
+║        GUIA DE ACTUALIZACIONES - YukiMu Server              ║
+║   Flujo de trabajo para el launcher y cambios visuales      ║
+╚══════════════════════════════════════════════════════════════╝
+
+============================================================
+INDICE
+============================================================
+1.  ESTRUCTURA DE CARPETAS DEL SERVIDOR WEB
+2.  FORMATO DE ArchiveList.txt (CRC32 y tamano)
+3.  COMO ACTUALIZAR ARCHIVOS DEL CLIENTE
+4.  COMO ELIMINAR ARCHIVOS DEL CLIENTE (desactualizar)
+5.  ACTUALIZACION DE NOTICIAS DEL LAUNCHER
+6.  CAMBIOS VISUALES EN EL CLIENTE DE LOS JUGADORES
+7.  GENERADOR DE CRC32
+8. SOLUCION DE PROBLEMAS COMUNES
+
+
+============================================================
+1. ESTRUCTURA DE CARPETAS DEL SERVIDOR WEB
+============================================================
+
+Los archivos que los jugadores descargan est�n en XAMPP:
+
+  C:\xampp\htdocs\yukisrv\Launcher\
+  ├── KrisbelLauncher.ini      ← Config del launcher (NameMain, noticias, etc.)
+  ├── ArchiveList.txt           ← Lista maestra de archivos con sus CRC32
+  ├── DeleteList.txt            ← Lista de archivos a eliminar del cliente
+  └── Update\                   ← Aqu� se colocan los archivos a distribuir
+       ├── Main.dll
+       ├── main.exe
+       ├── mu.ini
+       ├── ServerInfo.sse
+       ├── opengl32.dll
+       ├── QeffectsGL.ini
+       ├── Logs\placeholder.txt
+       ├── Data\...             ← Resto de archivos del cliente
+       └── (aqu� pones los nuevos archivos)
+
+El proyecto local est� en:
+  C:\ProyectoYukiMu\Launcher\Launcher\Web\launcher\
+  (SIEMPRE reflejar los cambios all� despu�s de modificar XAMPP)
+
+
+============================================================
+2. FORMATO DE ArchiveList.txt
+============================================================
+
+Cada l�nea tiene ESTE formato exacto:
+
+  nombrearchivo crc32 tamanio
+
+Ejemplos:
+
+  Config.ini 136fc3cd 523
+  Main.dll a83c9872 975360
+  main.exe 24bc05a1 1486848
+  Data\Gate.bmd a127da23 900
+
+Reglas:
+  - nombrearchivo: puede incluir subcarpetas con "\" (ej: "Data\Effect\fire01.OZJ")
+  - crc32: 8 caracteres hexadecimales en MINUSCULAS
+  - tamanio: tama�o del archivo en bytes (sin comas ni puntos)
+  - Un archivo por l�nea, sin espacios extras
+  - NO usar tabulaciones
+
+
+============================================================
+3. COMO ACTUALIZAR ARCHIVOS DEL CLIENTE
+============================================================
+
+PASO A PASO para agregar o reemplazar archivos:
+
+--- EJEMPLO: Quieres agregar un archivo "Data\Custom\mi_archivo.txt" ---
+
+  1) Coloca el archivo en la carpeta Update del servidor:
+
+       C:\xampp\htdocs\yukisrv\Launcher\Update\Data\Custom\mi_archivo.txt
+
+  2) Calcula su CRC32 (ver secci�n 9) y obt�n el tama�o en bytes.
+
+     Suponiendo: CRC32 = a1b2c3d4, Tama�o = 12345
+
+  3) Agrega una l�nea a ArchiveList.txt en la posici�n correcta
+     (orden alfab�tico o junto a archivos similares):
+
+       Data\Custom\mi_archivo.txt a1b2c3d4 12345
+
+  4) Refleja los cambios en la carpeta del proyecto local:
+
+       C:\ProyectoYukiMu\Launcher\Launcher\Web\launcher\Update\Data\Custom\mi_archivo.txt
+       C:\ProyectoYukiMu\Launcher\Launcher\Web\launcher\ArchiveList.txt
+
+  5) Los jugadores, al abrir el launcher, descargar�n el archivo autom�ticamente.
+
+--- EJEMPLO: Quieres reemplazar un archivo existente (ej: main.exe) ---
+
+  1) Coloca el nuevo main.exe en Update/main.exe
+  2) Calcula su CRC32 y tama�o
+  3) ACTUALIZA la l�nea existente en ArchiveList.txt con el nuevo CRC y tama�o
+  4) Refleja en la carpeta local
+  5) Los jugadores descargar�n la nueva versi�n (su CRC local no coincidir�)
+
+
+============================================================
+4. COMO ELIMINAR ARCHIVOS DEL CLIENTE (desactualizar)
+============================================================
+
+Si cometiste un error e incluiste un archivo que no deber�a estar,
+usa este m�todo para forzar su eliminaci�n del cliente de los jugadores.
+
+--- METODO 1: starter.bat (funciona con el launcher actual) ---
+
+  a) Edita C:\xampp\htdocs\yukisrv\Launcher\Update\starter.bat:
+
+       @echo off
+       if exist archivo_a_borrar.txt del archivo_a_borrar.txt
+       start "" main.exe %*
+       exit
+
+  b) Calcula el CRC32 de starter.bat y ACTUALIZA ArchiveList.txt
+     (si starter.bat ya est� listado, actualiza su CRC; si no, agrega la l�nea)
+
+  c) Cambia NameMain en KrisbelLauncher.ini:
+
+       NameMain = starter.bat
+
+  d) Elimina el archivo problem�tico de ArchiveList.txt
+     (para que no se vuelva a descargar)
+
+  e) Refleja cambios en la carpeta local del proyecto
+
+  f) Los jugadores, al abrir el launcher:
+     - Descargar�n el nuevo starter.bat (CRC cambiado)
+     - El launcher ejecutar� starter.bat en vez de main.exe
+     - starter.bat borrar� el archivo y luego iniciar� main.exe
+
+  g) CUANDO TERMINES, restaura todo:
+     - NameMain = main.exe en KrisbelLauncher.ini
+     - Elimina starter.bat de ArchiveList.txt y Update\
+     - Vac�a DeleteList.txt
+
+--- METODO 2: DeleteList.txt (requiere nuevo launcher compilado) ---
+
+  Si los jugadores tienen la versi�n NUEVA de Launcher.exe
+  (compilada con el c�digo de DeleteList.txt), solo necesitas:
+
+  a) Escribe el nombre del archivo en DeleteList.txt (uno por l�nea):
+
+       archivo_a_borrar.txt
+       Data\archivo_no_deseado.bmd
+
+  b) Elimina el archivo de ArchiveList.txt (para que no se re-descargue)
+  c) Listo. El launcher lo borrar� autom�ticamente al iniciar.
+
+
+============================================================
+5. ACTUALIZACION DE NOTICIAS DEL LAUNCHER
+============================================================
+
+Las noticias del launcher se configuran en:
+
+  C:\xampp\htdocs\yukisrv\Launcher\KrisbelLauncher.ini
+
+Secci�n [NOTICIAS]:
+
+  [NOTICIAS]
+  Active/OnOff   = 1              ← 1 = mostrar noticias, 0 = ocultar
+  NumNoticias    = 6              ← Cantidad de noticias (1 al 10)
+  LocalidadNoticias = 0           ← 0 = abajo, 1 = arriba
+
+  Noticia01 = [Novedad] Tu texto aqui
+  Noticia02 = [Evento] Otro texto
+  Noticia03 = ...
+  Noticia04 = ...
+  ...
+  Noticia10 =
+
+Reglas:
+  - NumNoticias define cu�ntas noticias se muestran (m�ximo 10)
+  - Las noticias vac�as (Noticia07 = ) se ignoran
+  - Puedes usar caracteres especiales como acentos
+  - Cada vez que edites el .ini, REFLEJA los cambios en la carpeta local
+  - Los jugadores ven las noticias nuevas AL INSTANTE (no necesitan
+    descargar nada, el launcher lee el .ini desde el servidor)
+
+
+
+============================================================
+6. CAMBIOS VISUALES EN EL CLIENTE DE LOS JUGADORES
+============================================================
+
+Para cambios visuales (agregar items, efectos, mapas, decoraciones, etc.),
+el flujo es:
+
+--- FASE 1: PRUEBAS LOCALES ---
+
+  a) Trabaja en el cliente LOCAL:
+
+       C:\ProyectoYukiMu\Client EX097 KOR\
+
+  b) Prueba que los cambios funcionen correctamente
+
+--- FASE 2: SUBIR AL SERVIDOR ---
+
+  a) Identifica QU� archivos cambiaron en el cliente local.
+     Los archivos comunes para cambios visuales son:
+
+     - Data\*.bmd        ← Items, monstruos, skills, mapas (decoraciones)
+     - Data\Effect\*     ← Efectos visuales (fire, blood, etc.)
+     - Data\Texture\*    ← Texturas del juego
+     - Data\Music\*      ← Musica del juego
+     - Data\World*       ← Mapas y decoraciones del mundo
+     - Main.dll          ← DLL principal del juego
+     - main.exe          ← Ejecutable principal
+     - ServerInfo.sse    ← Lista de servidores (encriptada)
+
+  b) Por CADA archivo modificado:
+
+     1) Copia el archivo del cliente local a:
+
+          C:\xampp\htdocs\yukisrv\Launcher\Update\Data\... (misma ruta)
+
+     2) Calcula el CRC32 y obt�n el tama�o
+
+     3) ACTUALIZA la l�nea correspondiente en ArchiveList.txt
+        con el nuevo CRC32 y tama�o
+
+--- FASE 3: SINCRONIZAR CON PROYECTO LOCAL ---
+
+  a) Refleja los cambios en:
+
+       C:\ProyectoYukiMu\Launcher\Launcher\Web\launcher\
+
+     (tanto Update\ como ArchiveList.txt y KrisbelLauncher.ini)
+
+  b) Esto asegura que el proyecto local quede respaldado con los
+     archivos actualizados por si reinstalas XAMPP.
+
+
+--- FASE 4: LOS JUGADORES RECIBEN LOS CAMBIOS ---
+
+  a) Los jugadores abren el launcher
+  b) El launcher descarga ArchiveList.txt
+  c) Compara CRC32 locales contra los del servidor
+  d) Descarga solo los archivos que cambiaron
+  e) Inicia el juego con los nuevos archivos
+
+
+============================================================
+7. GENERADOR DE CRC32
+============================================================
+
+Para calcular el CRC32 de un archivo desde PowerShell:
+
+=== OPCIÓN A: Funci�n completa (recomendada) ===
+
+function Get-CRC32Safe([string]$path) {
+    $table = New-Object System.UInt32[] 256;
+    for ($i = 0; $i -lt 256; $i++) {
+        $c = [System.UInt32]$i;
+        for ($j = 0; $j -lt 8; $j++) {
+            if (($c -band 1) -ne 0) {
+                $c = [System.UInt32](0xEDB88320 -bxor ($c -shr 1))
+            } else {
+                $c = [System.UInt32]($c -shr 1)
+            }
+        };
+        $table[$i] = $c
+    };
+    $crc = [System.UInt32]::MaxValue;
+    $buffer = [System.IO.File]::ReadAllBytes($path);
+    for ($i = 0; $i -lt $buffer.Length; $i++) {
+        $crc = [System.UInt32](($crc -shr 8) -bxor $table[($crc -band 0xFF) -bxor $buffer[$i]])
+    };
+    $crc = [System.UInt32]($crc -bxor [System.UInt32]::MaxValue);
+    $bytes = [System.BitConverter]::GetBytes($crc);
+    if ([System.BitConverter]::IsLittleEndian) { [Array]::Reverse($bytes) };
+    return ($bytes | ForEach-Object { "{0:x2}" -f $_ }) -join ''
+}
+
+# USO:
+# Get-CRC32Safe "C:\ruta\del\archivo.ext"
+# Devuelve algo como: a1b2c3d4
+
+=== OPCIÓN B: Comando r�pido ===
+
+$crc = Get-CRC32Safe "C:\xampp\htdocs\yukisrv\Launcher\Update\mi_archivo.ext"
+$size = (Get-Item "C:\xampp\htdocs\yukisrv\Launcher\Update\mi_archivo.ext").Length
+Write-Output "CRC=$crc Size=$size"
+
+
+============================================================
+8. SOLUCION DE PROBLEMAS COMUNES
+============================================================
+
+PROBLEMA: Los jugadores no ven los cambios
+  � El CRC32 en ArchiveList.txt es INCORRECTO
+  � El archivo en Update/ tiene un nombre diferente al listado
+  � No reiniciaste Apache despu�s de modificar los archivos
+
+PROBLEMA: Error "Disconnected from server"
+  � ServerInfo.sse, Main.dll o mu.ini son de una versi�n diferente
+  � Deben coincidir EXACTAMENTE con los del cliente local que funciona
+  � Verifica que el CRC32 en ArchiveList.txt sea el correcto
+
+PROBLEMA: El launcher no inicia el juego
+  � Verifica que NameMain en KrisbelLauncher.ini sea "main.exe"
+  � main.exe debe estar en Update/ y en ArchiveList.txt
+
+PROBLEMA: Los archivos no se eliminan con DeleteList.txt
+  � Los jugadores tienen la versi�n VIEJA de Launcher.exe
+  � Usa el m�todo starter.bat (secci�n 4 - M�todo 1)
+
+PROBLEMA: Al reiniciar Apache los cambios no se ven
+  � Det�n Apache desde el panel de control de XAMPP
+  � In�cialo de nuevo (no uses "reload")
+  � Verifica que los archivos est�n en las rutas correctas
+
+============================================================
+� FIN DE LA GUIA �
+============================================================

@@ -1,0 +1,277 @@
+````markdown
+# Flujo de Trabajo - ProyectoYukiMu
+## Configuración del Servidor (MU Online 97)
+
+---
+
+# Fase 1 - Aplicar cambios al servidor
+
+Una vez finalizado el trabajo en el cliente y convertido el archivo de atributos del mapa para el servidor, es momento de actualizar **ProyectoYukiMu**.
+
+## Copiar archivos del mapa
+
+Ubicación:
+
+```text
+ProyectoYukiMu/
+└── Data/
+    └── Terrain/
+```
+
+Copiar únicamente el archivo correspondiente al mapa modificado.
+
+Ejemplo:
+
+```text
+Terrain1.att
+Terrain2.att
+Terrain7.att
+```
+
+> **Importante:** Nunca reemplazar archivos de otros mapas si no fueron modificados.
+
+---
+
+# Fase 2 - Configuración del servidor
+
+## Configurar monstruos
+
+Si el mapa tendrá monstruos, editar:
+
+```text
+ProyectoYukiMu/
+└── Data/
+    └── MonsterSetBase.txt
+```
+
+Agregar los nuevos spawns indicando:
+
+- Monster ID
+- Coordenadas (X, Y)
+- Dirección
+- Cantidad o configuración según el emulador
+
+---
+
+## Configurar NPC
+
+Dependiendo del emulador, los NPC pueden configurarse en:
+
+```text
+MonsterSetBase.txt
+```
+
+o en un archivo específico para NPC.
+
+Agregar:
+
+- NPC ID
+- Coordenadas
+- Dirección
+- Mapa
+
+---
+
+## Configurar Gates
+
+Si el mapa será accesible mediante Warp, editar:
+
+```text
+ProyectoYukiMu/
+└── Data/
+    └── Gate.txt
+```
+
+Agregar un nuevo Gate indicando:
+
+- Gate ID
+- Mapa
+- Coordenadas
+- Radio
+- Destino
+
+---
+
+## Configurar Warp
+
+Editar:
+
+```text
+ProyectoYukiMu/
+└── Data/
+    └── MoveReq.txt
+```
+
+Agregar el nuevo destino para que pueda utilizarse desde el comando de movimiento o la interfaz correspondiente.
+
+---
+
+## Configurar archivos del Cliente
+
+El cliente también debe conocer el nuevo Warp.
+
+Actualizar:
+
+```text
+Cliente/
+└── Data/
+    └── Local/
+        └── Movereq.bmd
+```
+
+De esta forma aparecerá correctamente el destino para los jugadores.
+
+---
+
+# Fase 3 - Preparar actualización para los jugadores
+
+No distribuir el cliente completo si solamente cambió un mapa.
+
+Crear un **Patch** con únicamente los archivos modificados.
+
+Ejemplo:
+
+```text
+Patch/
+
+├── Data/
+│   ├── World/
+│   ├── Object/
+│   ├── Terrain/
+│   ├── Local/
+│   ├── Effect/
+│   └── Interface/
+```
+
+Agregar únicamente los archivos modificados.
+
+---
+
+# Fase 4 - Publicación
+
+## Actualizar ProyectoYukiMu
+
+Copiar los archivos modificados al servidor.
+
+Reiniciar los servicios necesarios para que los cambios sean cargados.
+
+---
+
+## Actualizar Launcher
+
+Subir el nuevo Patch al servidor de actualizaciones.
+
+Actualizar el archivo de versión si el Launcher lo requiere.
+
+---
+
+## Actualizar Página Web
+
+Publicar la noticia correspondiente indicando:
+
+- Nombre de la actualización.
+- Nuevos mapas.
+- Nuevos NPC.
+- Nuevos eventos.
+- Cambios importantes.
+
+---
+
+## Reiniciar el servidor
+
+Realizar un reinicio limpio para asegurar que todos los cambios sean cargados correctamente.
+
+---
+
+# Flujo resumido
+
+```text
+Editar mapa en el Cliente
+        │
+        ▼
+Convertir Terrain para Servidor
+        │
+        ▼
+Copiar Terrain.att a ProyectoYukiMu
+        │
+        ▼
+Configurar MonsterSetBase
+        │
+        ▼
+Configurar NPC
+        │
+        ▼
+Configurar Gate
+        │
+        ▼
+Configurar MoveReq
+        │
+        ▼
+Actualizar Movereq.bmd del Cliente
+        │
+        ▼
+Generar Patch
+        │
+        ▼
+Actualizar Launcher
+        │
+        ▼
+Actualizar ProyectoYukiMu
+        │
+        ▼
+Reiniciar servidor
+        │
+        ▼
+Publicar actualización
+```
+
+---
+
+# Principio fundamental
+
+```text
+Cliente
+│
+├── Modelos (.bmd)
+├── Texturas
+├── Objetos
+├── Terreno
+├── Efectos
+└── Interfaz
+
+↓
+
+ProyectoYukiMu
+
+├── Terrain.att
+├── MonsterSetBase.txt
+├── Gate.txt
+├── MoveReq.txt
+├── Configuración de NPC
+└── Lógica del juego
+```
+
+## Cliente
+
+Se encarga de mostrar todo el contenido visual:
+
+- Modelos 3D
+- Texturas
+- Decoración
+- Terreno
+- Efectos
+- Interfaz
+
+## ProyectoYukiMu
+
+Se encarga de toda la lógica del mapa:
+
+- Colisiones del terreno.
+- Aparición de monstruos.
+- Aparición de NPC.
+- Portales (Gate).
+- Warps.
+- Reglas de funcionamiento del mapa.
+
+Para que un mapa funcione correctamente, **Cliente** y **ProyectoYukiMu** deben estar siempre sincronizados.
+````

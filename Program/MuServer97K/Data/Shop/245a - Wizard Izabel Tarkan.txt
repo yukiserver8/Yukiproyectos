@@ -1,0 +1,26 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// -----------------------------------------------------------------------------------------------
+// [00,000]    [0~11]      [0~255]      [0-1]         [0-1]        [0~7]       [0~63]
+// ItemIndex   ItemLevel   Durability   SkillSwitch   LuckSwitch   Aditional   Excellent   Comment
+// -----------------------------------------------------------------------------------------------
+    07,001      7           0            0             1            4           0           //Dragon Helm+7+luck+opt
+    08,001      7           0            0             1            4           0           //Dragon Armor+7+luck+opt
+    09,001      7           0            0             1            4           0           //Dragon Pants+7+luck+opt
+    10,001      7           0            0             1            4           0           //Dragon Gloves+7+luck+opt
+    11,001      7           0            0             1            4           0           //Dragon Boots+7+luck+opt
+    07,016      3           0            0             1            4           0           //Black Dragon Helm+3+luck+opt
+    08,016      3           0            0             1            4           0           //Black Dragon Armor+3+luck+opt
+    09,016      3           0            0             1            4           0           //Black Dragon Pants+3+luck+opt
+    10,016      3           0            0             1            4           0           //Black Dragon Gloves+3+luck+opt
+    11,016      3           0            0             1            4           0           //Black Dragon Boots+3+luck+opt
+    02,007      7           0            1             1            4           0           //Elemental Mace+7+luck+skill+opt
+end

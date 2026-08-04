@@ -1,0 +1,503 @@
+=============================================================================
+  CATÁLOGO DE OBJETOS — YukiMu Online 97K (SSeMU)
+=============================================================================
+  Fuente: C:\ProyectoYukiMu\Program\MuServer97K\Data\Item\Item.txt
+  ItemIndex se usa como "Sección,Índice" en los shops (ej. 14,000 = Apple)
+=============================================================================
+
+
+=====================================================================
+  SECCIÓN 00 — ESPADAS (SWORDS)
+=====================================================================
+  ItemIndex  Nombre                        Nivel   Daño     Fuerza  Agilidad
+  ---------  ----------------------------  ------  --------  ------  --------
+  00,000     Kris                            6      6-11      40      40
+  00,001     Short Sword                     3      3-7       60      0
+  00,002     Rapier                          9      9-15      50      40
+  00,003     Katache                         16     16-26     80      40
+  00,004     Scimitar                        12     12-18     60      40
+  00,005     Blade                           36     36-47     80      50
+  00,006     Gladius                         20     20-30     110     0
+  00,007     Falchion                        24     24-34     120     0
+  00,008     Serpant Borg                    30     30-40     130     0
+  00,009     Sword of Salamander             32     32-46     103     0
+  00,010     Light Saber                     40     47-61     80      60
+  00,011     Legendary Sword                 44     56-72     120     0
+  00,012     Heliacal Sword                  56     73-98     140     0
+  00,013     Double Blade                    48     48-56     70      70
+  00,014     Lightning Sword                 59     59-67     90      50
+  00,015     Giant Sword                     52     60-85     140     0
+  00,016     Sword of Destruction            82     82-90     160     60
+  00,017     Spirit Sword                   104    138-163    180     50
+  00,018     Thunder Sword                  105    120-158    180     50
+  00,019     Absolute Sword of Archangel     86    120-130    140     50
+  00,020     Blade of Devourer              106    140-150    175     75
+  00,021     Double Sided Blunt Sword       110    150-185    200     70
+  00,031     Rune Blade                     100    104-130    135     62
+
+
+=====================================================================
+  SECCIÓN 01 — HACHAS (AXES)
+=====================================================================
+  ItemIndex  Nombre                        Nivel   Daño     Fuerza  Agilidad
+  ---------  ----------------------------  ------  --------  ------  --------
+  01,000     Small Axe                        1      1-6       50      0
+  01,001     Hand Axe                         4      4-9       70      0
+  01,002     Double Axe                      14     14-24      90      0
+  01,003     Tomahawk                        18     18-28      100     0
+  01,004     Fairy Axe                       26     26-38      50      70
+  01,005     Battle Axe                      30     36-44      120     0
+  01,006     Nikkea Axe                      34     38-50      130     0
+  01,007     Larkan Axe                      46     54-67      140     0
+  01,008     Crescent Axe                    54     69-89      100     40
+
+
+=====================================================================
+  SECCIÓN 02 — MAZAS (MACES)
+=====================================================================
+  ItemIndex  Nombre                        Nivel   Daño     Fuerza  Agilidad
+  ---------  ----------------------------  ------  --------  ------  --------
+  02,000     Mace                             7      7-13      100     0
+  02,001     Morning Star                    13     13-22      100     0
+  02,002     Iron Hammer                     22     22-32      80      50
+  02,003     Great Hammer                    38     45-56      150     0
+  02,004     Crystal Mace                    66     78-107     130     0
+  02,005     Crystal Sword                   72     84-115     130     70
+  02,006     Chaos Dragon Axe                75    102-130     140     50
+  02,007     Elemental Mace                  90     62-80      15      42
+  02,008     Skeleton Mace                   90    112-135     155     85
+  02,009     Slayer's Mace                  100    135-150     170    120
+  02,010     Stalker's Mace                 112    145-150     195    145
+  02,011     Mace of Gimli                  117    165-190     235    170
+  02,012     Phantom Mace                   127    210-240     315    230
+  02,013     Mace of the King               125    200-210     300    200
+
+
+=====================================================================
+  SECCIÓN 03 — LANCAS (SPEARS)
+=====================================================================
+  ItemIndex  Nombre                        Nivel   Daño     Fuerza  Agilidad
+  ---------  ----------------------------  ------  --------  ------  --------
+  03,000     Light Spear                      42     50-63      60      70
+  03,001     Spear                            23     30-41      70      50
+  03,002     Dragon Lance                    15     21-33      70      50
+  03,003     Big Pike                        29     35-43      90      30
+  03,004     Serpent Spear                   46     58-80      90      30
+  03,005     Double Halberd                  13     19-31      70      50
+  03,006     Halberd                         19     25-35      70      50
+  03,007     Bardiche                        37     42-54      80      50
+  03,008     Great Scythe                    54     71-92      90      50
+  03,009     Bill of Balrog                  63     76-102     80      50
+  03,010     Dragon Spear                    92    112-140     170     60
+
+
+=====================================================================
+  SECCIÓN 04 — ARCOS Y BALLESTAS (BOWS & CROSSBOWS)
+=====================================================================
+  ItemIndex  Nombre                        Nivel   Daño     Fuerza  Agilidad
+  ---------  ----------------------------  ------  --------  ------  --------
+  04,000     Short Bow                         2      3-5       20      80
+  04,001     Bow                              8      9-15      30      90
+  04,002     Fairy Bow                       16     17-24      30      90
+  04,003     Battle Bow                      26     28-37      30      90
+  04,004     Tiger Bow                       40     42-52      30     100
+  04,005     Silver Bow                      56     58-72      30     100
+  04,006     Chaos Nature Bow                75     77-102     40     150
+  04,007     Bolt (munición)                  0        -        0       0
+  04,008     Crossbow                         4      5-8       20      90
+  04,009     Golden Crossbow                 12     13-19      30      90
+  04,010     Arquebus                        20     22-30      30      90
+  04,011     Light Crossbow                  32     35-44      30      90
+  04,012     Serpent Crossbow                48     50-66      30     100
+  04,013     Legend Crossbow                 68     70-82      40     110
+  04,014     Aqua Gold Crossbow              72     74-98      50     130
+  04,015     Arrows (munición)                0        -        0       0
+  04,016     Saint Crossbow                  84     86-108     50     160
+  04,017     Giant Bow                       96    105-127     53     192
+  04,018     Archangel Crossbow             100    150-210     60     210
+
+
+=====================================================================
+  SECCIÓN 05 — BASTONES (STAFFS)
+=====================================================================
+  ItemIndex  Nombre                        Nivel   Daño Mágico  Fuerza  Energía
+  ---------  ----------------------------  ------  -----------  ------  -------
+  05,000     Skull Staff                      6         20       40      0
+  05,001     Angelic Staff                   18         38       50      0
+  05,002     Serpent Staff                   30         50       50      0
+  05,003     Lightning Staff                 42         60       40      10
+  05,004     Gorgon Staff                    52         65       50      0
+  05,005     Legendary Staff                 59         66       50      0
+  05,006     Resurrection Staff              70         70       60      10
+  05,007     Chaos Staff                     75         70       60      10
+  05,008     Unicorn Staff                   90         85       60      10
+  05,009     Crystal Staff                  100         91       52      16
+  05,010     Absolute Staff of Archangel    104         91       36      4
+  05,011     Kundun Staff                   117        100       56      20
+
+
+=====================================================================
+  SECCIÓN 06 — ESCUDOS (SHIELDS)
+=====================================================================
+  ItemIndex  Nombre                        Defensa  Fuerza
+  ---------  ----------------------------  -------  ------
+  06,000     Round Shield                      1      70
+  06,001     Horned Shield                     3     100
+  06,002     Kite Shield                       4     110
+  06,003     Fairy Shield                      8      30
+  06,004     Buckler                           2      80
+  06,005     Dragon Slayer Shield             10     100
+  06,006     Skull Shield                      5     110
+  06,007     Spiked Shield                     9     130
+  06,008     Tower Shield                     11     130
+  06,009     Iron Shield                       8     120
+  06,010     Big Round Shield                  6     120
+  06,011     Serpent Shield                   12     130
+  06,012     Bronce Shield                    13     140
+  06,013     Chaos Shield                     14     120
+  06,014     Legendary Shield                  7      80
+  06,015     Grand Soul Shield                12      70
+  06,016     Elemental Shield                 11      30
+
+
+=====================================================================
+  SECCIÓN 07 — CASCOS (HELMS)
+=====================================================================
+  ItemIndex  Nombre                        Defensa  Clase
+  ---------  ----------------------------  -------  ----------------
+  07,000     Bronze Helm                       9     DK
+  07,001     Dragon Helm                      24     DK
+  07,002     Pad Helm                          4     DW
+  07,003     Legendary Helm                   18     DW
+  07,004     Bone Helm                         9     DW
+  07,005     Leather Helm                      5     DK
+  07,006     Scale Helm                       12     DK
+  07,007     Sphinx Mask                      13     DW
+  07,008     Brass Helm                       17     DK
+  07,009     Plate Helm                       20     DK
+  07,010     Vine Helm                         4     ELF
+  07,011     Silk Helm                         8     ELF
+  07,012     Wind Helm                        12     ELF
+  07,013     Spirit Helm                      16     ELF
+  07,014     Guardian Helm                    23     ELF
+  07,016     Black Dragon Helm                30     DK
+  07,017     Dark Phoenix Helm                39     DK
+  07,018     Grand Soul Helm                  27     DW
+  07,019     Divine Helm                      30     ELF
+  07,021     Flaming Phoenix Helmet           69     DK
+  07,022     DarK Side Helmet                 56     DW
+  07,024     Nature Helmet                    39     ELF
+  07,025     Embroidered Mask                 47     DK
+  07,026     Storm Mask                       39     DW
+  07,027     Magus Mask                       58     DK
+  07,028     Adamantine Mask                  56     DW
+
+
+=====================================================================
+  SECCIÓN 08 — ARMADURAS (ARMORS)
+=====================================================================
+  ItemIndex  Nombre                        Defensa  Clase
+  ---------  ----------------------------  -------  ----------------
+  08,000     Bronze Armor                     14     DK
+  08,001     Dragon Armor                     37     DK
+  08,002     Pad Armor                         7     DW
+  08,003     Legendary Armor                  22     DW
+  08,004     Bone Armor                       13     DW
+  08,005     Leather Armor                    10     DK
+  08,006     Scale Armor                      18     DK
+  08,007     Sphinx Armor                     17     DW
+  08,008     Brass Armor                      22     DK
+  08,009     Plate Armor                      30     DK
+  08,010     Vine Armor                        8     ELF
+  08,011     Silk Armor                       12     ELF
+  08,012     Wind Armor                       16     ELF
+  08,013     Spirit Armor                     21     ELF
+  08,014     Guardian Armor                   29     ELF
+  08,015     Unicorn Armor                    44     MG
+  08,016     Black Dragon Armor               48     DK
+  08,017     Dark Phoenix Armor               59     DK
+  08,018     Grand Soul Armor                 33     DW
+  08,019     Divine Armor                     37     ELF
+  08,020     Thunder Armor                    55     MG
+  08,021     Flaming Phoenix Armor            80     DK
+  08,022     DarK Side Armor                  61     DW
+  08,023     Hurricane Armor                  74     MG
+  08,024     Nature Armor                     49     ELF
+  08,025     Embroidered Armor                65     DK
+  08,026     Storm Armor                      41     DW
+  08,027     Magus Armor                      71     DK
+  08,028     Adamantine Armor                 50     DW
+
+
+=====================================================================
+  SECCIÓN 09 — PANTALONES (PANTS)
+=====================================================================
+  ItemIndex  Nombre                        Defensa  Clase
+  ---------  ----------------------------  -------  ----------------
+  09,000     Bronze Pants                     10     DK
+  09,001     Dragon Pants                     26     DK
+  09,002     Pad Pants                         5     DW
+  09,003     Legendary Pants                  20     DW
+  09,004     Bone Pants                       10     DW
+  09,005     Leather Pants                     7     DK
+  09,006     Scale Pants                      14     DK
+  09,007     Sphinx Pants                     15     DW
+  09,008     Brass Pants                      18     DK
+  09,009     Plate Pants                      22     DK
+  09,010     Vine Pants                        6     ELF
+  09,011     Silk Pants                       10     ELF
+  09,012     Wind Pants                       14     ELF
+  09,013     Spirit Pants                     18     ELF
+  09,014     Guardian Pants                   25     ELF
+  09,015     Unicorn Pants                    34     MG
+  09,016     Black Dragon Pants               40     DK
+  09,017     Dark Phoenix Pants               50     DK
+  09,018     Grand Soul Pants                 30     DW
+  09,019     Divine Pants                     32     ELF
+  09,020     Thunder Pants                    44     MG
+  09,021     Flaming Phoenix Pants            75     DK
+  09,022     DarK Side Pants                  57     DW
+  09,023     Hurricane Pants                  64     MG
+  09,024     Nature Pants                     43     ELF
+  09,025     Embroidered Pants                57     DK
+  09,026     Storm Pants                      38     DW
+  09,027     Magus Pants                      64     DK
+  09,028     Adamantine Pants                 46     DW
+
+
+=====================================================================
+  SECCIÓN 10 — GUANTES (GLOVES)
+=====================================================================
+  ItemIndex  Nombre                        Defensa  Clase
+  ---------  ----------------------------  -------  ----------------
+  10,000     Bronze Gloves                     4     DK
+  10,001     Dragon Gloves                    14     DK
+  10,002     Pad Gloves                        2     DW
+  10,003     Legendary Gloves                 11     DW
+  10,004     Bone Gloves                       5     DW
+  10,005     Leather Gloves                    2     DK
+  10,006     Scale Gloves                      7     DK
+  10,007     Sphinx Gloves                     8     DW
+  10,008     Brass Gloves                      9     DK
+  10,009     Plate Gloves                     12     DK
+  10,010     Vine Gloves                       2     ELF
+  10,011     Silk Gloves                       4     ELF
+  10,012     Wind Gloves                       6     ELF
+  10,013     Spirit Gloves                     9     ELF
+  10,014     Guardian Gloves                  15     ELF
+  10,015     Unicorn Gloves                   20     MG
+  10,016     Black Dragon Gloves              22     DK
+  10,017     Dark Phoenix Gloves              33     DK
+  10,018     Grand Soul Gloves                20     DW
+  10,019     Divine Gloves                    22     ELF
+  10,020     Thunder Gloves                   29     MG
+  10,021     Flaming Phoenix Gloves           65     DK
+  10,022     DarK Side Gloves                 44     DW
+  10,023     Hurricane Gloves                 49     MG
+  10,024     Nature Gloves                    34     ELF
+  10,025     Embroidered Gloves               39     DK
+  10,026     Storm Gloves                     27     DW
+  10,027     Magus Gloves                     48     DK
+  10,028     Adamantine Gloves                35     DW
+
+
+=====================================================================
+  SECCIÓN 11 — BOTAS (BOOTS)
+=====================================================================
+  ItemIndex  Nombre                        Defensa  Clase
+  ---------  ----------------------------  -------  ----------------
+  11,000     Bronze Boots                      4     DK
+  11,001     Dragon Boots                     15     DK
+  11,002     Pad Boots                         3     DW
+  11,003     Legendary Boots                  12     DW
+  11,004     Bone Boots                        6     DW
+  11,005     Leather Boots                     2     DK
+  11,006     Scale Boots                       8     DK
+  11,007     Sphinx Boots                      9     DW
+  11,008     Brass Boots                      10     DK
+  11,009     Plate Boots                      12     DK
+  11,010     Vine Boots                        2     ELF
+  11,011     Silk Boots                        4     ELF
+  11,012     Wind Boots                        7     ELF
+  11,013     Spirit Boots                     10     ELF
+  11,014     Guardian Boots                   16     ELF
+  11,015     Unicorn Boots                    22     MG
+  11,016     Black Dragon Boots               24     DK
+  11,017     Dark Phoenix Boots               36     DK
+  11,018     Grand Soul Boots                 22     DW
+  11,019     Divine Boots                     23     ELF
+  11,020     Thunder Boots                    32     MG
+  11,021     Flaming Phoenix Boots            67     DK
+  11,022     DarK Side Boots                  56     DW
+  11,023     Hurricane Boots                  50     MG
+  11,024     Nature Boots                     32     ELF
+  11,025     Embroidered Boots                43     DK
+  11,026     Storm Boots                      33     DW
+  11,027     Magus Boots                      55     DK
+  11,028     Adamantine Boots                 41     DW
+
+
+=====================================================================
+  SECCIÓN 12 — ALAS Y ORBOS (WINGS & EXTRAS)
+=====================================================================
+  ItemIndex  Nombre                        Nivel  Clase
+  ---------  ----------------------------  ------  ----------------
+  12,000     Fairy Wings                     100    ELF
+  12,001     Angel Wings                     100    DW
+  12,002     Satan Wings                     100    DK
+  12,003     Butterfly Wings                 150    ELF (2da)
+  12,004     Arch Angel Wings                150    DW (2das)
+  12,005     Devil Wings                     150    DK (2das)
+  12,006     Dark Wings                      150    MG
+  12,007     Twisting Slash (Orb)             47    Skill DK
+  12,008     Orb of Healing                    8    Skill ELF
+  12,009     Orb of Advanced Defense          13    Skill ELF
+  12,010     Orb of Advanced Damage           18    Skill ELF
+  12,011     Orb of Summon                     3    Skill ELF
+               Nivel 0: Goblin Summoning Orb
+               Nivel 1: Stone Golem Summoning Orb
+               Nivel 2: Assassin Summoning Orb
+               Nivel 3: Elite Yeti Summoning Orb
+               Nivel 4: Dark Knight Summoning Orb
+               Nivel 5: Bali Summoning Orb
+               Nivel 6: Soldier Summoning Orb
+  12,012     Orb of Rageful Blow              78    Skill DK
+  12,013     Orb of Spearthrust               20    Skill
+  12,014     Life Swelling Orb                60    Skill DK
+  12,015     Jewel of Chaos                   12    Todas
+  12,016     Fire Slash (Orb)                 60    Skill MG
+  12,017     Penetration (Orb)                64    Skill ELF
+  12,018     Ice Age (Orb)                    81    Skill ELF
+  12,019     Orb of Blow                      72    Skill DK
+
+
+=====================================================================
+  SECCIÓN 13 — MASCOTAS, ANILLOS, COLLARES (PETS, RINGS, PENDANTS)
+=====================================================================
+  ItemIndex  Nombre                        Notas
+  ---------  ----------------------------  ------------------------------------
+  13,000     Guardian Angel                 Mascota (reduce daño 30%)
+  13,001     Satan/Imp                     Mascota (aumenta daño 30%)
+  13,002     Horn of Unilia                Mascota (montura caballo)
+  13,003     Dinorant                      Mascota (montura dinosaurio)
+  13,008     Ring of Ice                   Anillo (resistencia hielo)
+  13,009     Ring of Poison                Anillo (resistencia veneno)
+  13,010     Transformation Ring           Anillo (transformación en monstruo)
+               Nivel 0: Budge Dragon
+               Nivel 1: Giant
+               Nivel 2: Skeleton Warrior
+               Nivel 3: Poison Bull Fighter
+               Nivel 4: Thunder Lich
+               Nivel 5: Death Cow
+  13,012     Pendant of Lightning          Collar (resistencia rayo)
+  13,013     Pendant of Fire               Collar (resistencia fuego)
+  13,014     Blue Feather                  Item evento / Loch's Feather
+  13,015     Fruit                         Fruit (ENG/STA/AGI/STR segun nivel)
+  13,016     Scroll of Archangel           Item quest
+  13,017     Blood Fang                    Item quest
+  13,018     Invisibility Cloak            Item quest
+  13,019     Absolute Weapon of Archangel  Item evento (N0=Staff N1=Sword N2=CBow)
+  13,020     Wizard's Ring                 Item especial
+
+
+=====================================================================
+  SECCIÓN 14 — JOYAS, POCIONES, CONSUMIBLES
+=====================================================================
+  ItemIndex  Nombre                        Notas
+  ---------  ----------------------------  ------------------------------------
+  14,000     Apple                          Comida (recupera vida)
+  14,001     Small Healing Potion           Recupera vida
+  14,002     Medium Healing Potion          Recupera vida
+  14,003     Large Healing Potion           Recupera vida
+  14,004     Small Mana Potion              Recupera maná
+  14,005     Medium Mana Potion             Recupera maná
+  14,006     Large Mana Potion              Recupera maná
+  14,008     Antidote                       Cura veneno
+  14,009     Alcohol / Ale                  Efecto especial
+               Nivel 0: Ale
+               Nivel 1: Olive of Love
+  14,010     Town Teleport Scroll           Teletransporte a ciudad
+  14,011     Box of Luck / Cajas            Contenido aleatorio
+               Nivel 0: Box of Luck
+               Nivel 1: Star of the Sacred Birth
+               Nivel 2: Firecracker
+               Nivel 3: Heart of Love
+               Nivel 4: Olive of Love
+               Nivel 5: Silver Medal
+               Nivel 6: Gold Medal
+               Nivel 7: Box of Heaven
+               Nivel 8: Box of Kundun +1
+               Nivel 9: Box of Kundun +2
+               Nivel 10: Box of Kundun +3
+               Nivel 11: Box of Kundun +4
+               Nivel 12: Box of Kundun +5
+  14,012     Heart                          Item evento
+  14,013     Jewel of Bless                 Joya (mejora +0 a +6)
+  14,014     Jewel of Soul                  Joya (mejora +7 a +9)
+  14,015     Zen (oro)                      Moneda (no dropeable)
+  14,016     Jewel of Life                  Joya (agrega opción)
+  14,017     Devil Eye                      Item Blood Castle
+  14,018     Devil Key                      Item Blood Castle
+  14,019     Devil Invitation               Item Blood Castle
+  14,020     Love Charm                     Item evento
+  14,021     Rena                           Item evento
+               Nivel 0: Rena
+               Nivel 1: Stone
+  14,022     Jewel of Creation              Joya (creación Chaos)
+  14,023     Scroll of the Emperor          Item evento
+  14,024     Broken Sword                   Item evento
+  14,025     Elf Tear                       Item evento
+  14,026     Soul of Prophet                Item evento
+
+
+=====================================================================
+  SECCIÓN 15 — PERGAMINOS (SCROLLS)
+=====================================================================
+  ItemIndex  Nombre                        Nivel  Energía
+  ---------  ----------------------------  ------  -------
+  15,000     Poison Scroll                   30     10
+  15,001     Meteor Scroll                   21     10
+  15,002     Lightning Scroll                13     10
+  15,003     Fireball Scroll                  5     10
+  15,004     Flame Scroll                    35     10
+  15,005     Teleport Scroll                 17     10
+  15,006     Ice Scroll                      25     10
+  15,007     Twister Scroll                  40     10
+  15,008     Evil Spirits Scroll             50     10
+  15,009     Hell Fire Scroll                60     10
+  15,010     Power Wave Scroll                9     10
+  15,011     Aqua Beam Scroll                74     11
+  15,012     Blast Scroll                    80     13
+  15,013     Inferno Scroll                  93     15
+  15,014     Mass Teleport Scroll            78     20
+  15,015     Mana Shield Scroll              72     17
+
+
+=====================================================================
+  EJEMPLO DE USO EN ARCHIVO DE TIENDA (Data\Shop\*.txt)
+=====================================================================
+
+  Para agregar un objeto a una tienda, se escribe una línea por objeto:
+
+    14,003  0  1  0  0  0  0  //Large Healing Potion
+    14,013  0  1  0  0  0  0  //Jewel of Bless
+    00,016  0  1  0  0  0  0  //Sword of Destruction
+    06,008  0  1  0  0  0  0  //Tower Shield
+    07,001  0  1  0  0  0  0  //Dragon Helm
+    15,007  0  1  0  0  0  0  //Twister Scroll
+
+  Columnas:
+    ItemIndex   = "Sección,Índice" (ej. 14,003)
+    ItemLevel   = Nivel (0-13)
+    Durability  = Durabilidad (1=default, 255=infinito)
+    SkillSwitch = 1=con habilidad
+    LuckSwitch  = 1=con luck
+    AddOpt      = Opciones adicionales (0-7)
+    ExeOpt      = Opción excelente (0=ninguna, bitmask 1-63)
+
+  IMPORTANTE: La línea debe terminar con "end" (sin comillas)
+
+
+=====================================================================
+  FIN DEL DOCUMENTO
+=====================================================================

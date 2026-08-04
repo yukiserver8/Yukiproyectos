@@ -1,0 +1,119 @@
+#############################################################################
+#  SSeMU MU Online Emulator - Documentacion: NPC Personalizado de Dialogo
+#############################################################################
+
+1.  INTRODUCCION
+    ------------
+    Un "NPC de dialogo" es un NPC que no abre tienda al hacerle clic, sino
+    que muestra un mensaje de texto como bocadillo flotante sobre el npc. Es util para
+    NPCs decorativos que cuentan historia, dan pistas, o aportan ambientacion.
+
+2.  ARCHIVOS INVOLUCRADOS
+    ---------------------
+    - Data\NPCDialog.txt ............. Registro del NPC y su mensaje.
+    - Data\Monster\Spawn\*.txt ....... Ubicacion del NPC en el mapa.
+    - Data\Monster\MonsterList.txt ... Clase/Nombre del NPC (si es nuevo).
+    - Data\ShopManager.txt ........... Debe estar AUSENTE para el NPC de dialogos Pero no afectar a los demas NPC del mismo tipo ubicados en otros mapa con otras funciones.
+
+3.  LIMITE DE CARACTERES DEL MENSAJE
+    ---------------------------------
+    El mensaje del NPC soporta hasta 127 caracteres (incluyendo espacios).
+    Si el mensaje supera este limite, el servidor truncara el texto
+    silenciosamente.
+
+    Se recomienda mantener los dialogos entre 60 y 100 caracteres para
+    una correcta visualizacion en el chat del cliente.
+
+    Ejemplos de longitudes:
+      "Hola." ........................................ 5 caracteres
+      "Las ruinas guardan un secreto antiguo." ..... 40 caracteres
+      "Solo los valientes podran salvar a la Diosa Yuki." ... 52 caracteres
+
+4.  PASOS PARA CREAR UN NPC DE DIALOGO
+    -----------------------------------
+
+    PASO 1 - Elegir o crear la clase del NPC
+    -----------------------------------------
+    El NPC debe existir en Data\Monster\MonsterList.txt con un ID unico
+    de 3 digitos (ej: 231, 243). Si es un NPC nuevo, agregar una entrada
+    con el formato del archivo.
+
+    PASO 2 - Registrar el dialogo en NPCDialog.txt
+    -----------------------------------------------
+    Abrir Data\NPCDialog.txt y agregar una linea con el formato:
+
+      [ID_NPC]   [Mapa]   [CoordX]   [CoordY]   "[Mensaje]"
+
+    Ejemplo:
+      243   4   200   76   "Solo los valientes podran salvar a la Diosa Yuki."
+
+    - El ID_NPC debe coincidir con el de MonsterList.txt.
+    - El Mapa es el numero de mapa donde esta el NPC (0=Lorencia, 2=Elbeland,
+      3=Noria, 4=Lost Tower, 7=Atlans, etc.).
+    - CoordX/CoordY son las coordenadas exactas del NPC en el mapa.
+      El dialogo SOLO se mostrara para el NPC parado en esas coordenadas.
+      Esto permite tener multiples NPCs de la misma clase en un mismo mapa
+      sin que se afecten entre si (ej: uno con tienda y otro con dialogo).
+    - El mensaje debe ir entre comillas dobles.
+    - Maximo 127 caracteres para el mensaje.
+    - No repetir combinaciones ID_NPC+Mapa+Coordenadas.
+
+    PASO 3 - Posicionar el NPC en el mapa
+    -------------------------------------
+    En la carpeta Data\Monster\Spawn\, abrir el archivo del mapa deseado
+    (ej: 007 - Atlans.txt para Atlans, 004 - Lost Tower.txt para Lost Tower)
+    y agregar una linea con el formato:
+
+      [ID_NPC]   [Radio]   [CoordX]   [CoordY]   [Direccion]   //[Comentario]
+
+    Ejemplo:
+      231   0   15   15   3   //Thompson Kenel
+
+    Parametros:
+      ID_NPC     = ID del NPC en MonsterList.txt
+      Radio      = Radio de patrolleo (0 = fijo en esa posicion)
+      CoordX/Y   = Coordenadas en el mapa
+      Direccion  = 0-7 (direccion hacia donde mira el NPC)
+
+    PASO 4 - Verificar que no haya conflicto con tienda
+    ---------------------------------------
+    Si el NPC tiene el mismo ID que otro NPC que SÍ es tienda en el mismo
+    mapa pero en coordenadas diferentes, NO hay conflicto: el NPC en las
+    coordenadas del dialogo mostrara el mensaje, y el NPC en las coordenadas
+    de la tienda abrira la tienda. El sistema distingue por coordenadas
+    exactas.
+
+5.  EJEMPLO COMPLETO
+    -----------------
+    Objetivo: Crear un NPC "Guardián" que diga "Protejo este lugar." en
+    Lorencia (Mapa 0) en coordenadas 50/50, junto a otro Guardian con tienda
+    en el mismo mapa en coordenadas 60/60.
+
+    a) MonsterList.txt (si el NPC no existe):
+          250  0  "Guardian"
+
+     b) NPCDialog.txt:
+           250   0   50   50   "Protejo este lugar."
+
+     c) Spawn\000 - Lorencia.txt:
+           250   0   50   50   3   //Guardian (dialogo)
+           250   0   60   60   3   //Guardian (tienda)
+
+     d) ShopManager.txt (solo para el Guardian tienda en 60/60):
+           250   0   60   60   3   1   1   1   1   *   "250 - Guardian"
+
+     e) Shop\250 - Guardian.txt: archivo de items de la tienda.
+
+6.  NOTAS ADICIONALES
+    -----------------
+    - Si el NPC tiene tienda (entrada en ShopManager.txt) en las MISMAS
+      coordenadas que el dialogo, la tienda tiene prioridad y el dialogo
+      no se mostrara. Usa coordenadas diferentes para cada funcion.
+    - El dialogo se envia como mensaje de chat del NPC al jugador.
+    - Para que un NPC deje de ser de dialogo, solo se elimina su entrada
+      de NPCDialog.txt.
+    - Los archivos de spawn no se modifican automaticamente al eliminar
+      la entrada de NPCDialog.txt - el NPC seguira apareciendo, solo que
+      al hacerle clic no pasara nada (a menos que tenga tienda).
+
+end

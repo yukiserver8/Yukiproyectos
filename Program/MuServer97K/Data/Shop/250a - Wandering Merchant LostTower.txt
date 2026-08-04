@@ -1,0 +1,30 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// -----------------------------------------------------------------------------------------------
+// [00,000]    [0~11]      [0~255]      [0-1]         [0-1]        [0~7]       [0~63]
+// ItemIndex   ItemLevel   Durability   SkillSwitch   LuckSwitch   Aditional   Excellent   Comment
+// -----------------------------------------------------------------------------------------------
+    07,007      6           0            0             1            1           0           //Legendary Helm+6+luck+opt
+    08,007      6           0            0             1            1           0           //Legendary Armor+6+luck+opt
+    09,007      6           0            0             1            1           0           //Legendary Pants+6+luck+opt
+    10,007      6           0            0             1            1           0           //Legendary Gloves+6+luck+opt
+    11,007      6           0            0             1            1           0           //Legendary Boots+6+luck+opt
+    07,005      6           0            0             1            1           0           //Leather Helm+6+luck+opt
+    08,005      6           0            0             1            1           0           //Leather Armor+6+luck+opt
+    09,005      6           0            0             1            1           0           //Leather Pants+6+luck+opt
+    10,005      6           0            0             1            1           0           //Leather Gloves+6+luck+opt
+    11,005      6           0            0             1            1           0           //Leather Boots+6+luck+opt
+    07,011      6           0            0             1            1           0           //Silk Helm+6+luck+opt
+    08,011      6           0            0             1            1           0           //Silk Armor+6+luck+opt
+    09,011      6           0            0             1            1           0           //Silk Pants+6+luck+opt
+    10,011      6           0            0             1            1           0           //Silk Gloves+6+luck+opt
+    11,011      6           0            0             1            1           0           //Silk Boots+6+luck+opt
+end

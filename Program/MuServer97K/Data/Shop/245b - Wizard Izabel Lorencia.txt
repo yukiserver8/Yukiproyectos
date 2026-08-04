@@ -1,0 +1,43 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// -----------------------------------------------------------------------------------------------
+// [00,000]    [0~11]      [0~255]      [0-1]         [0-1]        [0~7]       [0~63]
+// ItemIndex   ItemLevel   Durability   SkillSwitch   LuckSwitch   Aditional   Excellent   Comment
+// -----------------------------------------------------------------------------------------------
+    13,018      1           0            0             0            0           0           //Invisibility Cloak+1
+    13,018      2           0            0             0            0           0           //Invisibility Cloak+2
+    13,018      3           0            0             0            0           0           //Invisibility Cloak+3
+    13,018      4           0            0             0            0           0           //Invisibility Cloak+4
+    13,018      5           0            0             0            0           0           //Invisibility Cloak+5
+    13,018      6           0            0             0            0           0           //Invisibility Cloak+6
+    14,019      1           0            0             0            0           0           //Devil Invitation+1
+    14,019      2           0            0             0            0           0           //Devil Invitation+2
+    14,019      3           0            0             0            0           0           //Devil Invitation+3
+    14,019      4           0            0             0            0           0           //Devil Invitation+4
+    14,019      5           0            0             0            0           0           //Devil Invitation+5
+    14,019      6           0            0             0            0           0           //Devil Invitation+6
+    14,023      0           0            0             0            0           0           //Scroll of the Emperor
+    14,024      0           0            0             0            0           0           //Broken Sword
+    14,025      0           0            0             0            0           0           //Elf Tear
+    14,026      0           0            0             0            0           0           //Soul of Prophet
+    13,000      10          0            0             0            0           0           //Guardian Angel+10
+    13,001      10          0            0             0            0           0           //Satan+10
+    13,002      0           0            0             0            0           0           //Horn of Unilia
+    13,003      0           0            0             0            0           0           //Dinorant
+    13,014      0           0            0             0            0           0           //Blue Feather
+    13,010      0           0            0             0            0           0           //Bull Fighter Transformation Ring
+    13,010      1           0            0             0            0           0           //Giant Transformation Ring
+    13,010      2           0            0             0            0           0           //Skeleton Warrior Transformation Ring
+    13,010      3           0            0             0            0           0           //Poison Bull Fighter Transformation Ring
+    13,010      4           0            0             0            0           0           //Thunder Lich Transformation Ring
+    13,010      5           0            0             0            0           0           //Death Cow Transformation Ring
+    13,010      6           0            0             0            0           0           //Budge Dragon Transformation Ring
+end

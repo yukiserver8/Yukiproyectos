@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9A90390-45D9-4421-A022-25B25212AC15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Launcher</RootNamespace>
+    <AssemblyName>Launcher</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Launcher.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Common.cs" />
+    <Compile Include="Clases\Computer.cs" />
+    <Compile Include="Clases\CRCProcessor.cs" />
+    <Compile Include="Clases\FileChecker.cs" />
+    <Compile Include="Clases\FileDownloader.cs" />
+    <Compile Include="Clases\Globals.cs" />
+    <Compile Include="Clases\ListDownloader.cs" />
+    <Compile Include="Clases\ListProcessor.cs" />
+    <Compile Include="Clases\Networking.cs" />
+    <Compile Include="Clases\Starter.cs" />
+    <Compile Include="Clases\Texts.cs" />
+    <Compile Include="Configuraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuraciones.Designer.cs">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Configuraciones.resx">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_launcher.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slider1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_launcher1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_launcher2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_launcher21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_entrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_entrarActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_configs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_logoKS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windowmode1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windowmode2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slider2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slider3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_configuraciones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Resources\35771931234507.564a1d2403b3a.gif" />
+    <None Include="Resources\load.gif" />
+    <None Include="Resources\checked-radio-button--v2.png" />
+    <None Include="Resources\checked-radio-button--v1.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\new.gif" />
+    <None Include="Resources\online.gif" />
+    <None Include="Resources\warning.gif" />
+    <None Include="Resources\bg_btnAtras.png" />
+    <None Include="Resources\bg_capchat.jpg" />
+    <None Include="Resources\bg_inputRegistro.png" />
+    <None Include="Resources\bg_registro.jpg" />
+    <None Include="Resources\bg_combobox.png" />
+    <None Include="Resources\bg_checkedOff.png" />
+    <None Include="Resources\bg_checkedOn.png" />
+    <None Include="Resources\bg_flechaTop.png" />
+    <None Include="Resources\bg_flechaBotton.png" />
+    <None Include="Resources\bg_input.png" />
+    <None Include="Resources\iconConfigs.png" />
+    <None Include="Resources\iconRegistro.png" />
+    <None Include="Resources\flecha_left.png" />
+    <None Include="Resources\flecha_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KittySoft\KittySoft.csproj">
+      <Project>{d556fdad-2190-4d19-b908-26832ef0daed}</Project>
+      <Name>KittySoft</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

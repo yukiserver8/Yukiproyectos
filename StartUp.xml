@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StartUp>
+  <Process Run="True" Delay="1000" Path="C:\ProyectoYukiMu\Program\MuServer97K\ConnectServer\ConnectServer.exe" Parameters="" />
+</StartUp>

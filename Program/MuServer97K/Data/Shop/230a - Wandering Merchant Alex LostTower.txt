@@ -1,0 +1,28 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// -----------------------------------------------------------------------------------------------
+// [00,000]    [0~11]      [0~255]      [0-1]         [0-1]        [0~7]       [0~63]
+// ItemIndex   ItemLevel   Durability   SkillSwitch   LuckSwitch   Aditional   Excellent   Comment
+// -----------------------------------------------------------------------------------------------
+    00,013      7           255          1             1            1           0           //Double Blade+7+skill+luck+opt
+    00,014      7           255          1             1            1           0           //Lightning Sword+7+skill+luck+opt
+    03,007      7           255          1             1            1           0           //Bardiche+7+skill+luck+opt
+    03,008      7           255          1             1            1           0           //Great Scythe+7+skill+luck+opt
+    05,004      7           255          0             1            1           0           //Gorgon Staff+7+luck+opt
+    05,005      7           255          0             1            1           0           //Legendary Staff+7+luck+opt
+    04,004      7           255          1             1            1           0           //Tiger Bow+7+skill+luck+opt
+    04,005      7           255          1             1            1           0           //Silver Bow+7+skill+luck+opt
+    04,012      7           255          1             1            1           0           //Serpent Crossbow+7+skill+luck+opt
+    13,000      10          255          0             0            0           0           //Guardian Angel+10
+    13,001      10          255          0             0            0           0           //Imp+10
+    04,007      5           255          0             0            0           0           //Bolt+5
+    04,015      5           255          0             0            0           0           //Arrow+5
+end

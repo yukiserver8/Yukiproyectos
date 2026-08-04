@@ -1,0 +1,37 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// -----------------------------------------------------------------------------------------------
+// [00,000]    [0~11]      [0~255]      [0-1]         [0-1]        [0~7]       [0~63]
+// ItemIndex   ItemLevel   Durability   SkillSwitch   LuckSwitch   Aditional   Excellent   Comment
+// -----------------------------------------------------------------------------------------------
+    14,000      0           0            0             0            0           0           //Apple
+    14,003      0           50           0             0            0           0           //Large Healing Potion
+    14,006      0           50           0             0            0           0           //Large Mana Potion
+    14,008      0           50           0             0            0           0           //Antidote
+    14,009      0           1            0             0            0           0           //Ale
+    14,009      1           1            0             0            0           0           //Ale
+    15,000      0           1            0             0            0           0           //Scroll of Poison
+    15,001      0           1            0             0            0           0           //Scroll of Meteorite
+    15,002      0           1            0             0            0           0           //Scroll of Lighting
+    15,003      0           1            0             0            0           0           //Scroll of Fire Ball
+    15,004      0           1            0             0            0           0           //Scroll of Flame
+    15,005      0           1            0             0            0           0           //Scroll of Teleport
+    15,006      0           1            0             0            0           0           //Scroll of Ice
+    15,007      0           1            0             0            0           0           //Scroll of Twister
+    15,008      0           1            0             0            0           0           //Scroll of Evil Spirits
+    15,009      0           1            0             0            0           0           //Scroll of Hell Fire
+    15,010      0           1            0             0            0           0           //Scroll of Power Wave
+    15,011      0           1            0             0            0           0           //Scroll of Aqua Beam
+    15,012      0           1            0             0            0           0           //Scroll of Blast
+    15,013      0           1            0             0            0           0           //Scroll of Inferno
+    15,014      0           1            0             0            0           0           //Scroll of Mass Teleport
+    15,015      0           1            0             0            0           0           //Scroll of Mana Shield
+end

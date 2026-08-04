@@ -1,0 +1,15 @@
+mapa		coordenadas/orientación		npc/elemento decorativo			funcion/objetosshop
+
+losttower	208/76		5		#132    Statue of Saint			Elemento decorativo
+losttower	203/71				#245     Wizard Izabel			tienda: Apple, Large Healing Potion (durab 50), Large Mana Potion (durab 50), Antidote (durab 50), Alcohol / Ale (nivel 0 y 1), Scrolls pergamino para mago (todos).
+losttower	211/72				#102    Fire				Elemento decorativo
+losttower	213/74		7		#250     Wandering Merchant		tienda: set Legendary+6+luck+opt , set Leather+6+luck+opt , set Silk+6+luck+opt
+losttower	211/81				#247    Guard	
+losttower	207/79				#247    Guard
+losttower	208/74				#247    Guard
+
+Modificar tienda de Hanzo the Blacksmith y bajar el nivel de sus objetos de +8 a +6			
+
+
+
+

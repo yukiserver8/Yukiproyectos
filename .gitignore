@@ -1,0 +1,95 @@
+# Visual Studio
+.atl/
+.vs/
+*.suo
+*.user
+*.sln.docstates
+*.userprefs
+Debug/
+Release/
+x64/
+Win32/
+ipch/
+*.sdf
+*.opensdf
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.obj
+*.idb
+*.tlog
+*.log
+*.pch
+
+# .NET / C#
+bin/
+obj/
+*.csproj.user
+
+# Compiled redistributables (track these explicitly if needed)
+# Launcher.exe and KittySoft.dll in Distribucion ARE tracked
+
+# Backups
+*.bak
+*.bak-*
+*.old
+
+# Archives
+*.zip
+*.7z
+*.rar
+*.mp4
+
+# Logs and temp
+LOG/
+logs/
+*.tmp
+*.temp
+
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Node
+node_modules/
+
+# Cliente ZIP (huge, no trackear en git)
+Program/MuServer97K/StartUp/Cliente.zip
+Program/MuServer97K/StartUp/Cliente.zip.bak
+Program/MuServer99B/Cliente.zip
+
+# Installer output
+InstallerYukiMu/*.exe
+InstallerYukiMu/*.zip
+InstallerYukiMu/Output/
+
+# Local client and generated distribution
+Client EX097 KOR/
+temp_gs/
+Launcher/Launcher/Web/launcher/Update/
+Launcher/Distribucion/*.exe
+Launcher/Distribucion/KittySoft.dll
+Launcher/Launcher/*.exe
+Program/MuServer97K/Tools/GetMainInfo/Path/
+Program/MuServer97K/GameServer/*.exe
+Program/MuServer97K/GameServer/*.dll
+Program/MuServer97K/GameServer/*.lib
+Program/MuServer97K/**/*.exe
+Program/MuServer97K/**/*.bak-*
+
+# Local/private deployment settings
+Program/MuServer97K/ConnectServer/ServerList.dat
+Program/MuServer97K/Tools/GetMainInfo/MainInfo.ini
+Program/MuServer97K/Tools/*/config.ini
+Program/MuServer97K/Tools/MuEditor/
+Program/MuServer97K/Tools/kayitoEditor/
+Program/MuServer97K/Tools/kayitoTools.exe
+Program/MuServer97K/Tools/GetMainInfo/*.exe
+Program/MuServer97K/Tools/GetMainInfo/*.dll
+Program/MuServer97K/Tools/GetMainInfo/*.pdb
+
+# Generated launcher manifests and deployment mirrors
+Launcher/Launcher/Web/launcher/ArchiveList.txt
+Launcher/Launcher/Web/launcher/DeleteList.txt

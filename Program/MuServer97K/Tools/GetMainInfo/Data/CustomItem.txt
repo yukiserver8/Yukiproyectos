@@ -1,0 +1,114 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// ------------------------------------------------
+// [00,000]    [0~255]  [0~255]  [0~255]
+// ItemIndex   ColorR   ColorG   ColorB   ModelName
+// ------------------------------------------------
+// EXAMPLE
+//Index	|		B	|	 G	|	  B
+00,020			255   		 127	  	  000		"Sword21"// Blade of Devourer
+00,021			*		 *		  *		"Sword22"// Double Sided Blunt Sword
+00,022			*		 *		  *		"Sword23"// Daybreak Sword
+00,023			*		 *		  *		"Sword24"// Bone Blade
+00,024			*		 *		  *		"Sword25"// Sword Dancer
+00,025			*		 *		  *		"Sword26"// Scout Hammer
+00,026			*		 *		  *		"Sword27"// Bersek Axe
+00,027			*		 *		  *		"Sword28"// Soram Hammer
+//========================================================================================================
+// MACES
+//Index	|		B	|	 G	|	  B
+//========================================================================================================
+02,008			255   		 127	  	  000		"Mace09"		// Skeleton Mace
+02,009			255   		 127	  	  000		"Mace10"		// Slayer's Mace
+02,010			255   		 127	  	  000		"Mace11"		// Stalker's Mace
+02,011			255   	 	 127	 	  000		"Mace12"		// Mace of Gimli
+02,012			255   		 127	  	  000		"Mace13"		// Phatom Mace
+02,013			255   		 127	  	  000		"Mace14"		// Mace of the King
+//========================================================================================================
+// SPEARS
+//Index	|	Skill	|	ModelName	|	Comment
+//========================================================================================================
+//========================================================================================================
+// BOWS AND CROSSBOWS REQUIRE THEIR OWN SYSTEM. DON'T ADD THEM HERE BECAUSE THEY WON'T WORK CORRECTLY
+//========================================================================================================
+//========================================================================================================
+// STAFFS
+//Index	|		B	|	 G	|	  B
+//========================================================================================================
+05,011			255   		 127	  	  000		"Staff12"		// Staff of Kundun
+//========================================================================================================
+// SHIELDS
+//Index	|	Skill	|	ModelName	|	Comment
+//========================================================================================================
+
+//========================================================================================================
+// SETS
+//Index	|		B	|	 G	|	  B
+//========================================================================================================
+//
+07,021			255   		 127	  	  000		"HelmMale22"		// Flaming Phoenix Helm
+08,021			255   		 127	  	  000		"ArmorMale22"		// Flaming Phoenix Armor
+09,021			255   		 127	  	  000		"PantMale22"		// Flaming Phoenix Pant
+10,021			255   		 127	  	  000		"GloveMale22"		// Flaming Phoenix Glove
+11,021			255   		 127	  	  000		"BootMale22"		// Flaming Phoenix Boot
+//
+07,022			255   		 127	  	  000		"HelmMale23"		// Dark Side Helm
+08,022			255   		 127	  	  000		"ArmorMale23"		// Dark Side Armor
+09,022			255   		 127	  	  000		"PantMale23"		// Dark Side Pant
+10,022			255   		 127	  	  000		"GloveMale23"		// Dark Side Glove
+11,022			255   		 127	  	  000		"BootMale23"		// Dark Side Boot
+//
+08,023			255   		 127	  	  000		"ArmorMale24"		// Hurricane Armor
+09,023			255   		 127	  	  000		"PantMale24"		// Hurricane Pant
+10,023			255   		 127	  	  000		"GloveMale24"		// Hurricane Glove
+11,023			255   		 127	  	  000		"BootMale24"		// Hurricane Boot
+// 
+07,024			255   		 127	  	  000		"HelmMale25"		// Nature Helm
+08,024			255   		 127	  	  000		"ArmorMale25"		// Nature Armor
+09,024			255   		 127	  	  000		"PantMale25"		// Nature Pant
+10,024			255   		 127	  	  000		"GloveMale25"		// Nature Glove
+11,024			255   		 127	  	  000		"BootMale25"		// Nature Boot
+//
+07,025			255   		 127	  	  000		"HelmMale26"		// Embroidered Helm
+08,025			255   		 127	  	  000		"ArmorMale26"		// Embroidered Armor
+09,025			255   		 127	  	  000		"PantMale26"		// Embroidered Pant
+10,025			255   		 127	  	  000		"GloveMale26"		// Embroidered Glove
+11,025			255   		 127	  	  000		"BootMale26"		// Embroidered Boot
+//
+07,026			255   		 127	  	  000		"HelmMale27"		// Storm Helm
+08,026			255   		 127	  	  000		"ArmorMale27"		// Storm Armor
+09,026			255   		 127	  	  000		"PantMale27"		// Storm Pant
+10,026			255   		 127	  	  000		"GloveMale27"		// Storm Glove
+11,026			255   		 127	  	  000		"BootMale27"		// Storm Boot
+//
+07,027			255   		 127	  	  000		"HelmMale28"		// Magus Helm
+08,027			255   		 127	  	  000		"ArmorMale28"		// Magus Armor
+09,027			255   		 127	  	  000		"PantMale28"		// Magus Pant
+10,027			255   		 127	  	  000		"GloveMale28"		// Magus Glove
+11,027			255   		 127	  	  000		"BootMale28"		// Magus Boot
+//
+07,028			255   		 127	  	  000		"HelmMale29"		// Adamantine Helm
+08,028			255   		 127	  	  000		"ArmorMale29"		// Adamantine Armor
+09,028			255   		 127	  	  000		"PantMale29"		// Adamantine Pant
+10,028			255   		 127	  	  000		"GloveMale29"		// Adamantine Glove
+11,028			255   		 127	  	  000		"BootMale29"		// Adamantine Boot
+//
+07,018			255                51                  25		"HelmMale19"		// Grand Soul Helm
+08,018			255                51                  25		"ArmorMale19"		// Grand Soul Armor
+09,018			255                51                  25		"PantMale19"		// Grand Soul Pant
+10,018			255                51                  25		"GloveMale19"		// Grand Soul Glove
+11,018			255                51                  25		"BootMale19"		// Grand Soul Boot
+//
+//
+//========================================================================================================
+// WINGS, RINGS AND PENDANTS REQUIRE THEIR OWN SYSTEM. DON'T ADD THEM HERE BECAUSE THEY WON'T WORK CORRECTLY
+//========================================================================================================
+end

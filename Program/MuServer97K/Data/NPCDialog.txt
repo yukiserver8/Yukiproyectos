@@ -1,0 +1,19 @@
+// #############################################################################
+// # SSeMU MU Online Emulator
+// # https://www.ssemu.com.ar
+// # https://www.facebook.com/ssemuemulator
+// # https://www.youtube.com/@ssemu
+// # ---------------------------------------------------------------------------
+// # © 2023 SetecSoft Development
+// # This file is part of the SSeMU MuOnline Server files.
+// #############################################################################
+
+// -----------------------------------------------------------------------------------------------
+// [MonsterClass]   [Map]   [PosX]   [PosY]   "[Message]"
+// -----------------------------------------------------------------------------------------------
+// Max 127 characters for the message
+// PosX/PosY = NPC coordinates for exact matching (-1 = any position)
+// -----------------------------------------------------------------------------------------------
+	243			4	200	77	"Solo los valientes podran salvar a la Diosa Yuki."
+231			7	15	15	"Las profundidades guardan secretos de la Diosa Yuki."
+end
