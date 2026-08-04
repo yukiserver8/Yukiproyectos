@@ -51,11 +51,13 @@ Recompensas en Zen:
   BC5: 200,000 / 100,000
   BC6: 250,000 / 120,000
 
-Drops exclusivos de Blood Castle 6:
-  - Jewel of Bless
-  - Jewel of Soul
-  - Jewel of Life
-  - Jewel of Creation
+Recompensa por completar (1er puesto):
+  Blood Castle 1: Box of Luck +9
+  Blood Castle 2: Box of Luck +10
+  Blood Castle 3: Box of Luck +10
+  Blood Castle 4: Box of Luck +11
+  Blood Castle 5: Box of Luck +11
+  Blood Castle 6: Box of Luck +12
 
 NPC necesario: Archangel (se accede con el item "Invisibility Cloak" +1 a +6).
 
