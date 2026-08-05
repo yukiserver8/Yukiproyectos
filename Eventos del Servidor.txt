@@ -77,8 +77,8 @@ Duración: 20 minutos por evento
 Jugadores máximos: 15 por sala
 Límite de entradas: Sin límite
 
-Horarios (cada 4 horas, todos los días):
-  00:30 / 04:30 / 08:30 / 12:30 / 16:30 / 20:30
+Horarios (cada 3 horas, todos los días):
+  00:30 / 03:30 / 06:30 / 09:30 / 12:30 / 15:30 / 18:30 / 21:30
 
 Niveles de entrada (Common / Special):
   Devil Square 1:  Lv 10-99    (Special: 6-66)
@@ -116,14 +116,14 @@ Tasa de éxito al crear tickets en Chaos Machine: 80%
 Estado: ACTIVADO
 Duración: 10 minutos cada invasión
 
-Las invasiones ocurren CADA 4 HORAS, escalonadas cada 10 minutos,
+Las invasiones ocurren CADA 2 HORAS, escalonadas en minutos distintos,
 todos los días del mes.
 
 --------------------------------------------------------------------------------
 3A. SKELETON KING INVASION
 --------------------------------------------------------------------------------
 
-Horarios: 00:05 / 04:05 / 08:05 / 12:05 / 16:05 / 20:05
+Horarios: 00:15 / 02:15 / 04:15 / 06:15 / 08:15 / 10:15 / 12:15 / 14:15 / 16:15 / 18:15 / 20:15 / 22:15
 
 Jefe: Death King (Monster 55)
 Acompañantes: Death Bone (Monster 56) x10
@@ -148,7 +148,7 @@ Drops del Skeleton King (Death King):
 3B. RED DRAGON INVASION
 --------------------------------------------------------------------------------
 
-Horarios: 00:15 / 04:15 / 08:15 / 12:15 / 16:15 / 20:15
+Horarios: 00:25 / 02:25 / 04:25 / 06:25 / 08:25 / 10:25 / 12:25 / 14:25 / 16:25 / 18:25 / 20:25 / 22:25
 
 Monstruo: Red Dragon (Monster 42)
 Cantidad: 1 en Lorencia, 1 en Devias, 1 en Noria
@@ -160,7 +160,7 @@ Drops del Red Dragon:
 3C. GOLDEN INVASION (Invasion Dorada)
 --------------------------------------------------------------------------------
 
-Horarios: 00:25 / 04:25 / 08:25 / 12:25 / 16:25 / 20:25
+Horarios: 00:40 / 02:40 / 04:40 / 06:40 / 08:40 / 10:40 / 12:40 / 14:40 / 16:40 / 18:40 / 20:40 / 22:40
 
 Esta invasion despliega multiples monstruos dorados por todos los mapas:
 
