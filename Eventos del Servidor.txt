@@ -203,9 +203,14 @@ Drops de monstruos dorados (todos dan Box of Luck):
 
 Estado: PERMANENTE (NPC disponible siempre)
 
-NPC permanente en el servidor que intercambia medallas por recompensas.
+NPC que intercambia joyas por bendiciones. Ubicacion del NPC:
+  - Lost Tower (mapa 4): 213/78
 
-Recompensas segun nivel de grupo:
+Sistema de canje (2 intercambios disponibles):
+  Canje 1: 5 Jewel of Life → 1 Jewel of Bless
+  Canje 2: 2 Jewel of Creation → 1 Jewel of Soul
+
+Recompensas del GoldenArcher.dat (drop al entregar):
   Grupo 0: 10% Jewel of Chaos, 1% Bless, 1% Soul, 1% Life
   Grupo 1: 10% Jewel of Chaos, 3% Bless, 3% Soul, 3% Life
   Grupo 2: 10% Jewel of Chaos, 5% Bless, 5% Soul, 5% Life
