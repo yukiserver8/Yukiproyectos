@@ -33,10 +33,10 @@ CommandChangeLimit_AL3 = 1
 ;==================================================
 ; Ware Command Settings
 ;==================================================
-CommandWareNumber_AL0 = 1
-CommandWareNumber_AL1 = 1
-CommandWareNumber_AL2 = 1
-CommandWareNumber_AL3 = 1
+CommandWareNumber_AL0 = 5
+CommandWareNumber_AL1 = 5
+CommandWareNumber_AL2 = 5
+CommandWareNumber_AL3 = 5
 
 ;==================================================
 ; Reset Command Settings
