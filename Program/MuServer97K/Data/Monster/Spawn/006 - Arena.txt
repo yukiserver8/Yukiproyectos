@@ -26,6 +26,10 @@
      64             0             29           115        0      //Ogre Archer
      65             0             35           109        0      //Elite Ogre
      64             0             38           115        0      //Ogre Archer
+     65             0             78           115        0      //Elite Ogre
+     64             0             84           106        0      //Ogre Archer
+     65             0             94           114        0      //Elite Ogre
+     64             0             84           90         0      //Ogre Archer
 end
 
 1
@@ -45,6 +49,10 @@ end
      64             3             26          112         32          118         *           3      //Ogre Archers
      65             3             32          106         38          112         *           3      //Elite Ogres
      64             3             35          112         41          118         *           3      //Ogre Archers
+     65             3             75          112         81          118         *           3      //Elite Ogres
+     64             3             81          103         87          109         *           3      //Ogre Archers
+     65             3             91          111         97          117         *           3      //Elite Ogres
+     64             3             81          87          87          93          *           3      //Ogre Archers
 end
 
 2
