@@ -1,0 +1,212 @@
+===============================================================================
+  YUKIMU 0.97K - TOP TIER DE MOBS
+  Ranking de poder de todos los monstruos del servidor
+  Ordenados del MAS FUERTE al MAS DEBIL
+  Basado en MonsterList.txt (vida maxima, nivel, dano, defensa)
+===============================================================================
+
+Criterio de ranking:
+  - Prioridad 1: Vida Maxima (HP) - cuanta golpiza aguanta
+  - Prioridad 2: Nivel (desempate)
+  - Prioridad 3: Dano Maximo (desempate final)
+
+Nota: Se excluyen NPCs (Type 1), trampas (100-103), Soccer Ball,
+      Castle Gate y Statues (objetos sin dano).
+
+Legend:
+  LV = Nivel | HP = Vida Maxima | DMG = Dano Min-Max | DEF = Defensa
+  AT = Attack Rate | DF = Defense Rate
+
+===============================================================================
+  TIER S - ABOMINACIONES FINALES (HP 50.000+)
+===============================================================================
+  77  Phoenix of Darkness        Lv108  HP95000   DMG950-1000  DEF600  AT900  DF350
+  76  Phoenix Darkness Shield    Lv106  HP73000   DMG850-960   DEF580  AT840  DF305
+  130 Magic Skeleton (BC6)       Lv125  HP65000   DMG830-865   DEF680  AT920  DF370
+  124 Magic Skeleton (BC5)       Lv125  HP65000   DMG830-865   DEF680  AT920  DF370
+  129 Red Skeleton Knight (BC6)  Lv119  HP55000   DMG780-820   DEF600  AT850  DF360
+  123 Red Skeleton Knight (BC5)  Lv119  HP55000   DMG780-820   DEF600  AT850  DF360
+  118 Magic Skeleton (BC4)       Lv102  HP55000   DMG560-600   DEF550  AT870  DF310
+  75  Great Drakan               Lv100  HP50000   DMG650-700   DEF495  AT800  DF305
+  82  Golden Tantalos            Lv90   HP50000   DMG450-560   DEF400  AT450  DF185
+
+===============================================================================
+  TIER A - JEFES Y ELITE (HP 30.000-49.999)
+===============================================================================
+  112 Magic Skeleton (BC3)       Lv99   HP47000   DMG530-580   DEF500  AT840  DF280
+  122 Giant Ogre (BC5/BC6)       Lv112  HP45000   DMG645-690   DEF540  AT780  DF310
+  128 Giant Ogre (BC6)           Lv112  HP45000   DMG645-690   DEF540  AT780  DF310
+  117 Red Skeleton Knight (BC4)  Lv98   HP45000   DMG510-560   DEF490  AT800  DF270
+  72  Phantom Knight             Lv96   HP41000   DMG560-610   DEF425  AT690  DF270
+  42  Red Dragon                 Lv55   HP61600*  DMG400-493   DEF493  AT431  DF154
+  79  Golden Derkon              Lv80   HP40000   DMG350-400   DEF230  AT400  DF90
+  80  Golden Lizard King         Lv83   HP40000   DMG350-400   DEF240  AT415  DF150
+  63  Death Beam Knight          Lv93   HP40000   DMG590-650   DEF420  AT575  DF220
+  66  Cursed King                Lv86   HP38000   DMG500-570   DEF350  AT525  DF200
+  111 Red Skeleton Knight (BC3)  Lv94   HP38000   DMG480-540   DEF450  AT720  DF260
+  121 Dark Skull Soldier (BC5/6) Lv110  HP37000   DMG600-650   DEF500  AT710  DF300
+  127 Dark Skull Soldier (BC6)   Lv110  HP37000   DMG600-650   DEF500  AT710  DF300
+  116 Giant Ogre (BC4)           Lv93   HP37000   DMG470-520   DEF440  AT730  DF250
+  74  Alpha Crust                Lv92   HP34500   DMG489-540   DEF360  AT620  DF240
+  59  Zaikan                     Lv90   HP34000   DMG510-590   DEF400  AT550  DF185
+  120 Chief Skeleton Archer(BC5) Lv106  HP32000   DMG510-555   DEF480  AT640  DF260
+  126 Chief Skeleton Archer(BC6) Lv106  HP32000   DMG510-555   DEF480  AT640  DF260
+  95  Magic Skeleton (BC2)       Lv90   HP32000   DMG400-460   DEF450  AT720  DF260
+  99  Giant Ogre (BC3)           Lv90   HP32000   DMG440-500   DEF400  AT660  DF230
+  115 Dark Skull Soldier (BC4)   Lv90   HP32000   DMG430-480   DEF400  AT660  DF230
+  119 Chief Skeleton Warrior(BC5)Lv105  HP29000   DMG475-510   DEF440  AT570  DF250
+  125 Chief Skeleton Warrior(BC6)Lv105  HP29000   DMG475-510   DEF440  AT570  DF250
+  73  Drakan                     Lv86   HP29000   DMG425-480   DEF305  AT570  DF210
+  67  Metal Balrog               Lv77   HP26000   DMG300-360   DEF220  AT385  DF150
+  94  Red Skeleton Knight (BC2)  Lv87   HP26000   DMG370-410   DEF400  AT650  DF200
+  114 Chief Skeleton Archer(BC4) Lv87   HP26000   DMG390-430   DEF380  AT590  DF200
+
+===============================================================================
+  TIER B - MOBS ALTOS (HP 15.000-25.999)
+===============================================================================
+  61  Beam Knight                Lv84   HP25000   DMG375-425   DEF275  AT530  DF190
+  98  Dark Skull Soldier (BC3)   Lv86   HP25000   DMG390-420   DEF360  AT580  DF195
+  55  Death King (Skeleton King) Lv88   HP30000   DMG430-500   DEF288  AT360  DF89
+  58  Tantalos                   Lv83   HP22000   DMG335-385   DEF250  AT500  DF175
+  97  Chief Skeleton Archer(BC3) Lv81   HP20000   DMG320-350   DEF270  AT520  DF160
+  83  Golden Wheel               Lv77   HP20000   DMG336-350   DEF360  AT320  DF200
+  49  Hydra                      Lv74   HP19000   DMG250-310   DEF200  AT430  DF125
+  92  Dark Skull Soldier (BC2)   Lv80   HP19000   DMG280-340   DEF220  AT470  DF175
+  70  Queen Rainier              Lv82   HP19000   DMG305-350   DEF230  AT475  DF160
+  88  Red Skeleton Knight (BC1)  Lv82   HP18000   DMG270-320   DEF290  AT560  DF170
+  96  Chief Skeleton Warrior(BC3)Lv76   HP17000   DMG260-290   DEF210  AT460  DF150
+  57  Iron Wheel                 Lv80   HP17000   DMG280-330   DEF215  AT446  DF150
+  87  Giant Ogre (BC1)           Lv79   HP15000   DMG250-290   DEF210  AT500  DF150
+  44  Dragon                     Lv60   HP15000   DMG190-210   DEF120  AT300  DF88
+  91  Chief Skeleton Archer(BC2) Lv75   HP15000   DMG240-300   DEF190  AT420  DF130
+  71  Mega Crust                 Lv78   HP15000   DMG270-320   DEF210  AT430  DF140
+  65  Elite Ogre                 Lv74   HP14000   DMG260-290   DEF190  AT400  DF125
+  60  Bloody Wolf                Lv76   HP13500   DMG260-300   DEF200  AT410  DF130
+  86  Dark Skull Soldier (BC1)   Lv75   HP12000   DMG220-260   DEF190  AT440  DF130
+  90  Chief Skeleton Warrior(BC2)Lv70   HP12000   DMG210-270   DEF185  AT380  DF125
+  69  Alquamos                   Lv75   HP11500   DMG255-290   DEF195  AT385  DF125
+  64  Ogre Archer                Lv70   HP10000   DMG220-250   DEF170  AT350  DF115
+  62  Mutant                     Lv72   HP10000   DMG250-280   DEF190  AT365  DF120
+
+===============================================================================
+  TIER C - MOBS MEDIOS (HP 5.000-9.999)
+===============================================================================
+  38  Balrog                     Lv66   HP9000    DMG220-240   DEF160  AT330  DF99
+  48  Lizard King                Lv70   HP9000    DMG240-270   DEF180  AT350  DF115
+  51  Great Bahamut              Lv66   HP7000    DMG210-230   DEF150  AT330  DF98
+  52  Silver Valkyrie            Lv68   HP8000    DMG230-260   DEF170  AT340  DF110
+  85  Chief Skeleton Archer(BC1) Lv69   HP9500    DMG200-240   DEF170  AT380  DF110
+  84  Chief Skeleton Warrior(BC1)Lv64   HP7500    DMG180-220   DEF150  AT340  DF98
+  18  Gorgon                     Lv55   HP6000    DMG165-175   DEF100  AT275  DF82
+  35  Death Gorgon               Lv64   HP6000    DMG200-210   DEF130  AT320  DF94
+  40  Death Knight               Lv62   HP5500    DMG190-200   DEF120  AT310  DF91
+  37  Devil                      Lv60   HP5000    DMG180-195   DEF115  AT300  DF88
+  41  Death Cow                  Lv57   HP4500    DMG170-180   DEF110  AT285  DF85
+  34  Cursed Wizard              Lv54   HP4000    DMG160-170   DEF95   AT270  DF80
+  25  Ice Queen                  Lv52   HP4000    DMG155-165   DEF90   AT260  DF76
+  39  Poison Shadow              Lv50   HP3500    DMG155-160   DEF85   AT250  DF73
+  10  Dark Knight                Lv48   HP3000    DMG150-155   DEF80   AT240  DF70
+  36  Shadow                     Lv47   HP2800    DMG148-153   DEF78   AT235  DF67
+  46  Vepar                      Lv45   HP2800    DMG135-145   DEF70   AT225  DF58
+  8   Poison Bull Fighter        Lv46   HP2500    DMG145-150   DEF75   AT230  DF61
+  45  Bahamut                    Lv43   HP2400    DMG130-140   DEF65   AT215  DF52
+  9   Thunder Lich               Lv44   HP2000    DMG140-145   DEF70   AT220  DF55
+  16  Chief Skeleton Warrior     Lv42   HP1800    DMG135-140   DEF65   AT210  DF49
+
+===============================================================================
+  TIER D - MOBS BAJOS (HP 400-4.999)
+===============================================================================
+  5   Hell Hound                 Lv38   HP1400    DMG125-130   DEF55   AT190  DF45
+  15  Skeleton Archer            Lv34   HP1100    DMG115-120   DEF45   AT170  DF41
+  13  Hell Spider                Lv40   HP1600    DMG130-135   DEF60   AT200  DF47
+  11  Ghost                      Lv32   HP1000    DMG110-115   DEF40   AT160  DF39
+  20  Elite Yeti                 Lv36   HP1200    DMG120-125   DEF50   AT180  DF43
+  19  Yeti                       Lv30   HP900     DMG105-110   DEF37   AT150  DF37
+  17  Cyclops                    Lv28   HP850     DMG100-105   DEF35   AT140  DF35
+  35  Assassin (Lv26)            Lv26   HP800     DMG95-100    DEF33   AT130  DF33
+  12  Larva                      Lv25   HP750     DMG90-95     DEF31   AT125  DF31
+  23  Hommerd                    Lv24   HP700     DMG85-90     DEF29   AT120  DF29
+  56  Death Bone                 Lv24   HP700     DMG85-90     DEF29   AT120  DF29
+  22  Ice Monster                Lv22   HP650     DMG80-85     DEF27   AT110  DF27
+  24  Worm                       Lv20   HP600     DMG75-80     DEF25   AT100  DF25
+  14  Skeleton                   Lv19   HP525     DMG68-74     DEF22   AT93   DF22
+  32  Stone Golem                Lv18   HP465     DMG62-68     DEF20   AT86   DF20
+  7   Giant                      Lv17   HP400     DMG57-62     DEF18   AT80   DF18
+  31  Agon                       Lv16   HP340     DMG51-57     DEF16   AT74   DF16
+  30  Forest Monster             Lv15   HP295     DMG46-51     DEF15   AT68   DF15
+  6   Lich                       Lv14   HP255     DMG41-46     DEF14   AT62   DF14
+  4   Elite Bull Fighter         Lv12   HP190     DMG31-36     DEF12   AT50   DF12
+  1   Hound                      Lv9    HP140     DMG22-27     DEF9    AT39   DF9
+  33  Elite Goblin               Lv8    HP120     DMG19-23     DEF8    AT33   DF8
+  0   Bull Fighter               Lv6    HP100     DMG16-20     DEF6    AT28   DF6
+  28  Beetle Monster             Lv10   HP165     DMG26-31     DEF10   AT44   DF10
+  2   Budge Dragon               Lv4    HP60      DMG10-13     DEF3    AT18   DF3
+  27  Chain Scorpion             Lv5    HP80      DMG13-17     DEF4    AT23   DF4
+  3   Spider                     Lv2    HP30      DMG4-7       DEF1    AT8    DF1
+  26  Goblin                    Lv3    HP45      DMG7-10      DEF2    AT13   DF2
+
+===============================================================================
+  MOBS DORADOS / ESPECIALES (con su propio tier segun stats)
+===============================================================================
+  43  Golden Budge Dragon        Lv30   HP25000   DMG120-125   DEF300  AT225  DF90
+  53  Golden Titan               Lv53   HP27500   DMG210-220   DEF330  AT248  DF99
+  54  Golden Soldier             Lv46   HP26250   DMG192-200   DEF315  AT236  DF95
+  78  Golden Goblin              Lv30   HP25000   DMG120-125   DEF300  AT225  DF90
+  81  Golden Vepar               Lv61   HP28750   DMG259-270   DEF345  AT259  DF104
+
+  Nota: Los mobs dorados tienen stats inflados en defensa/HP
+        y drops especiales (Box of Luck, joyas).
+
+===============================================================================
+  MOBS POR MAPA (referencia rapida)
+===============================================================================
+  Lorencia (00):    Bull Fighter, Hound, Budge Dragon, Spider, Elite Bull,
+                    Goblin, Chain Scorpion, Beetle, Hunter, Forest, Agon,
+                    Stone Golem, Elite Goblin, Golden Budge Dragon
+  Dungeon (01):     Skeletons, Ghosts, Larva, Hell Hound, Lich, Giant,
+                    Poison Bull, Thunder Lich, Dark Knight, Cyclops, Gorgon,
+                    Yeti, Elite Yeti, Assassin, Ice Monster, Hommerd, Worm,
+                    Ice Queen
+  Devias (02):      Yeti, Elite Yeti, Assassin, Ice Monster, Hommerd, Worm,
+                    Ice Queen
+  Noria (03):       Spider, Goblin, Chain Scorpion, Beetle, Hunter, Forest,
+                    Agon, Stone Golem, Elite Goblin
+  Lost Tower (04):  Shadow, Poison Shadow, Devil, Balrog, Death Knight,
+                    Death Cow, Death Gorgon + mobs de Dungeon
+  Atlans (07):      Bahamut, Vepar, Valkyrie, Lizard King, Hydra,
+                    Great Bahamut, Silver Valkyrie
+  Tarkan (08):      Iron Wheel, Tantalos, Zaikan, Bloody Wolf, Beam Knight,
+                    Mutant, Death Beam Knight
+  Icarus (10):      Alquamos, Queen Rainier, Mega Crust, Phantom Knight,
+                    Drakan, Alpha Crust, Great Drakan, Phoenix Shield,
+                    Phoenix of Darkness
+  Devil Square (09): Mobos segun nivel (DS1-DS4)
+  Blood Castle (11-16): Skeleton Warriors/Archers, Dark Skull, Giant Ogre,
+                    Red Skeleton Knight, Magic Skeleton (progresion por BC)
+  Arena (06):       Solo Soccer Ball + Phantom Knights (spots nuevos)
+
+===============================================================================
+  BOSSES GLOBALES
+===============================================================================
+  42  Red Dragon        Lv55   HP61600   DMG400-493  DEF493  AT431  DF154
+                       Aparece por invasion. Drop: Jewel of Soul 100%
+  55  Death King        Lv88   HP30000   DMG430-500  DEF288  AT360  DF89
+                       Skeleton King Invasion. Drop especial
+  66  Cursed King       Lv86   HP38000   DMG500-570  DEF350  AT525  DF200
+  67  Metal Balrog      Lv77   HP26000   DMG300-360  DEF220  AT385  DF150
+  82  Golden Tantalos   Lv90   HP50000   DMG450-560  DEF400  AT450  DF185
+
+===============================================================================
+  NOTA FINAL
+===============================================================================
+  - El ranking usa HP como criterio principal; mobs con HP similar
+    se ordenan por nivel y dano.
+  - Red Dragon tiene HP especial (61600) pero aparece solo en invasion.
+  - Los mobs de Blood Castle y Devil Square comparten indices con otros
+    mapas pero con stats especificos por nivel (ver guia completa).
+  - Los Guardias de ciudad (247, 249) tienen dano 1200-1300 (para PK)
+    pero son NPCs, no mobs cazables.
+
+===============================================================================
+  FIN DEL TOP TIER
+===============================================================================
